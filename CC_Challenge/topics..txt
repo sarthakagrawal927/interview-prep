@@ -1,0 +1,176 @@
+🎯 Week 1
+👉 1.1
+Basics, Input, Output, Loops, Addition, Subtraction
+|
+|Hello world program in C/C++
+|While loop & For loop
+|Operators like addition/subtraction
+|Solving reversing a number
+
+👉1.2
+Time Complexity, Array, Binary Search, Kadane’s Algorithm
+|
+|Using for loop to input array
+|Sum of all elements in array
+|Binary Search
+|Kadane’s Algorithm
+|Count Sorting
+
+👉1.3
+Linear Search, Binary Search & Adhoc problems
+|
+|Linear Search & Binary Search
+|Solving for loop based problems
+|Solving binary search based problems
+
+👉1.4
+Prime Numbers, Vector and STL algorithms:
+|
+|What is Vector ?
+|Vector operations and Sort
+|Starting number theory
+|Finding Prime Numbers
+|How to find prime faster ?
+|Sieve of Ethranos
+
+👉1.5
+Recursion & Memoization
+|
+|Factorial using for loop
+|Factorial using Recursion
+|What is Memoization ?
+|What is Hashmap ?
+
+👉1.6
+Game Theory, Companion Matrix & solving problems asked in interviews
+|
+|Solving more 2D matrix problems
+|Intro to Game Theory
+|Power function in log(n)
+|Faster way to compute large factorial
+|Companion Matrix
+
+🎯 Week 2
+👉2.1
+Working on LinkedList, Queue & Stack
+|What is segmentation fault and pointers ?
+|Into to Linked List
+|Intro to Queue
+|Intro to Stack
+|Push, Pop and Size operations
+
+👉2.2
+|Linked list based problem solving
+|Stack based problem solving
+|Queue based problem solving
+
+👉2.3
+String, Maps & Heap
+|
+|Intro to strings library
+|Solving problems on strings
+|Solving problems on map
+|Min heap and Max heap
+|Using Priority Queue STL
+
+👉2.4
+String, Maps & Heap
+|
+|And operator
+|OR operator
+|XOR operator
+|More Hashmap
+
+👉2.5
+Set and Tree
+|
+|Using set library
+|Operations like insert,size, begin, end, iterators
+|Learning two pointer technique
+|Intro to Binary Tree and Complete Tree
+
+👉2.6
+practice
+|
+|Revisiting pointer, linkedList and Adhoc problems
+
+🎯 Week 3
+👉3.1
+Tree and Tree Traversal
+|
+|Intro to Tree
+|Pre order traversal
+|In order traversal
+|Post order traversal
+|Implementation using recursion
+|Solving problem based on Tree
+
+👉3.2
+|
+|How to solve approach hard level problems
+|Solving problems based on strings and arrays
+
+👉3.3
+|
+|Solving hard Number Theory based problems
+|Solving hard string based problems
+
+👉3.4
+|
+|Solving more problems asked in product based companies based on arrays, strings and maths
+
+👉3.5
+TRIE and Extras
+|
+|Intro to TRIE
+|Implementation of trie.
+|Solving problems based on TREE
+
+🎯Week 4
+👉4.1
+|
+|Recursion Detailed
+|What is Memoization
+|Solving problem using memoization
+
+👉4.2
+Backtracking Algorithm
+|
+|What is BackTracking ?
+|Solving NQueen Problem
+
+👉4.3
+Tree and Arrays
+|
+|Level Order Traversal of Tree
+|Zig Zag Order Traversal of Tree
+|Tri Sum Zero Problem
+
+👉4.4
+Dynamic Programming
+|
+|Top Down & Bottom Up approach
+|Fibonacci Series
+|1D Prefix Sum Array
+|2D Prefix Sum Array
+
+👉4.5
+Hard Problems on DP
+|
+|Solving hard problems on DP
+|Rod cutting problem
+|Longest Increasing SubSequence
+|Best notes for Dynamic Programming
+
+👉4.6
+Graph, BFS & DFS
+|
+|Directed, Undirected ?
+|Depth First Search
+|Breadth First Search
+|Implementation of code for DFS & BFS
+
+👉4.7
+Greedy Algorithm
+|
+|Huffman Coding Algorithm
