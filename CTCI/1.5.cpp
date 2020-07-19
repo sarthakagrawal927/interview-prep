@@ -11,17 +11,39 @@ int main()
 {
     string s = "", p = "";
     getline(cin, s);
-    getline(cin, p);
-
-    sort(s.begin(), s.end());
-    sort(p.begin(), p.end());
+    getline(cin, p); //assuming s > p and only by 1  char.
 
     int loop = s.length() < p.length() ? s.length() : p.length();
-    int diff = s.length() - p.length();
-
-    rep(i, 0, loop)
+    int diffLeft = 0, diffRight = 0;
+    if (s.length() == p.length())
     {
-        if (s[i] != p[i])
-            diff++;
+        rep(i, 0, loop)
+        {
+            if (s[i] != p[i])
+                diffLeft++;
+
+            if (s[loop - i] != p[loop - i])
+                diffRight++;
+        }
+        if (diffLeft == diffRight && diffLeft == 1)
+            cout << "yes";
+        else
+            cout << "no";
     }
+    else // s > p by 1 char
+    {
+        rep(i, 0, loop)
+        {
+            if (s[i] != p[i])
+                diffLeft++;
+
+            if (s[loop - i] != p[loop - i - 1]) //as s is exactly 1 character bigger
+                diffRight++;
+        }
+        if ((diffLeft + diffRight) == loop)
+            cout << "yes";
+        else
+            cout << "no";
+    }
+    // cout << diffLeft << " " << diffRight << endl;
 }
