@@ -22,7 +22,7 @@ int main()
             if (s[i] != p[i])
                 diffLeft++;
 
-            if (s[loop - i] != p[loop - i])
+            if (s[loop - i - 1] != p[loop - i - 1])
                 diffRight++;
         }
         if (diffLeft == diffRight && diffLeft == 1)

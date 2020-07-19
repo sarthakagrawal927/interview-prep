@@ -1,1 +1,4 @@
 *.exe
+*.json
+/EOPI/ElementsOfProgrammingInterviews.pdf
+/CTCI/CrackingTheCodingInterview.pdf
