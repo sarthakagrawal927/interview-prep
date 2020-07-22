@@ -33,6 +33,8 @@ void insertNode(int data, Node *node)
 }
 Node *deleteNode(int data, Node *node)
 {
+    cout << "deleting   " << data << endl;
+
     Node *temp = node;
     Node *temp2 = node->next;
     if (node->data == data)
@@ -69,28 +71,42 @@ void printList(Node *head)
     }
     cout << endl;
 }
+void removeDups(Node *head)
+{
+    Node *temp = head;
+    Node *temp2 = head->next;
+
+    while (temp->next)
+    {
+        while (temp2)
+        {
+            cout << "comparing   " << temp->data << "=" << temp2->data << endl;
+            if (temp->data == temp2->data && temp != temp2)
+            {
+                head = deleteNode(temp->data, head);
+                printList(head);
+            }
+            temp2 = temp2->next;
+        }
+        temp = temp->next;
+        temp2 = temp->next;
+    }
+}
 int main()
 {
     Node *head;
     int x = 0, c = 0;
     cin >> x;
     head = createNode(x);
-    while (c != -1)
+    while (x != -1)
     {
-        cout << "1 for insert, 2 for delete, 3 for print, -1 for exit";
-        cin >> c;
-        if (c == 1)
-        {
-            cin >> x;
+        cin >> x;
+        if (x != -1)
             insertNode(x, head);
-        }
-        else if (c == 2)
-        {
-            cin >> x;
-            head = deleteNode(x, head);
-        }
-        else if (c == 3)
-            printList(head);
     }
+    printList(head);
+    removeDups(head);
+    printList(head);
+
     return 0;
 }
