@@ -2,8 +2,7 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <numeric> //For accumulate operation
-
+#include <numeric>
 using namespace std;
 #define ll long long int
 #define rep(i, j, n) for (ll i = j; i < n; i++)
