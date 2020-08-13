@@ -2,7 +2,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <numeric>
 
 using namespace std;
 #define rep(i, start, end) for (int i = start; i < end; i++)
