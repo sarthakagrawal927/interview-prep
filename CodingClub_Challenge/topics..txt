@@ -1,45 +1,4 @@
-🎯 Week 1
-👉 1.1
-Basics, Input, Output, Loops, Addition, Subtraction
-|
-|Hello world program in C/C++
-|While loop & For loop
-|Operators like addition/subtraction
-|Solving reversing a number
 
-👉1.2
-Time Complexity, Array, Binary Search, Kadane’s Algorithm
-|
-|Using for loop to input array
-|Sum of all elements in array
-|Binary Search
-|Kadane’s Algorithm
-|Count Sorting
-
-👉1.3
-Linear Search, Binary Search & Adhoc problems
-|
-|Linear Search & Binary Search
-|Solving for loop based problems
-|Solving binary search based problems
-
-👉1.4
-Prime Numbers, Vector and STL algorithms:
-|
-|What is Vector ?
-|Vector operations and Sort
-|Starting number theory
-|Finding Prime Numbers
-|How to find prime faster ?
-|Sieve of Ethranos
-
-👉1.5
-Recursion & Memoization
-|
-|Factorial using for loop
-|Factorial using Recursion
-|What is Memoization ?
-|What is Hashmap ?
 
 👉1.6
 Game Theory, Companion Matrix & solving problems asked in interviews
