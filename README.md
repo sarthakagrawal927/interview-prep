@@ -3,11 +3,17 @@
 - Week 01 ( 21/09 - 27/09 ) :
 
   - 14 CSES Questions
-  - DSA Learning Series - Linear Data Structures
-  - Week 1 - CS Fundamentals-2
-  - Week 1 to 4 - DS & Performance
-  - 17 - 24 - Udemy CIBA
-  - 18 - 21 - Udemy JADSM
+  - DSA Learning Series -> Linear Data Structures
+  - Week 1 -> CS Fundamentals-2
+  - Week 1 to 4 -> DS & Performance
+  - 17 - 24 -> Udemy CIBA
+  - 18 - 21 -> Udemy JADSM
+  - 6 - 9 -> EOPI
+  - Contests:
+    - 24th 8:05pm Codeforces Round 672
+    - 26th 7:30pm Codechef Cookoff
+    - 27th 8:35pm Codeforces Round 673
+    - 27th 8:00am LeetCode Weekly Challenge 208
 
 - Week 02 ( 28/09 - 04/10 ) :
 - Week 03 ( 05/10 - 11/10 ) :
