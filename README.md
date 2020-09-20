@@ -1,18 +1,8 @@
 # DSA
 
-case Codechef_DSA:
-    Online DSA camp
-
-case SPOJ:
-case CodeForces:
-    Random Questions
-
-case LeetCode:
-    Pdf Questions
-    Company Wise Questions
-
-case Understanding:
-    GeeksForGeeks
-
-case CodingClub_Challenge:
-    topics.txt
+Week 1 ( 21/09 - 27/09 ) :
+Week 2 ( 28/09 - 04/10 ) :
+Week 3 ( 05/10 - 11/10 ) :
+Week 4 ( 12/10 - 18/10 ) :
+Week 5 ( 19/10 - 25/10 ) :
+Week 6 ( 26/10 - ) :
