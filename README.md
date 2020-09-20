@@ -1,12 +1,13 @@
 # DSA
 
 - Week 01 ( 21/09 - 27/09 ) :
-  14 CSES Questions
-  DSA Learning Series - Linear Data Structures
-  Week 1 - CS Fundamentals-2
-  Week 1 to 4 - DS & Performance
-  17 - 24 - Udemy CIBA
-  18 - 21 - Udemy JADSM
+
+  - 14 CSES Questions
+  - DSA Learning Series - Linear Data Structures
+  - Week 1 - CS Fundamentals-2
+  - Week 1 to 4 - DS & Performance
+  - 17 - 24 - Udemy CIBA
+  - 18 - 21 - Udemy JADSM
 
 - Week 02 ( 28/09 - 04/10 ) :
 - Week 03 ( 05/10 - 11/10 ) :
