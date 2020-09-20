@@ -2,3 +2,7 @@
 *.json
 /EOPI/ElementsOfProgrammingInterviews.pdf
 /CTCI/CrackingTheCodingInterview.pdf
+/.vscode
+/InterviewQuestions
+/LeetCode/Leetcode-Company-Wise-Problems-master
+/LeetCode/List/questions.pdf
