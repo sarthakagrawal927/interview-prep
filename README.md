@@ -4,12 +4,12 @@
 
   - 14 CSES Questions
   - DSA Learning Series -> Linear Data Structures
-  - Week 1 -> CS Fundamentals-2
-  - Week 1 to 4 -> DS & Performance
-  - 17 - 24 -> Udemy CIBA
+  - Week 1 -> CS Fundamentals-2 [THEORY]
+  - Week 1 to 4 -> DS & Performance [THEORY]
+  - 17 - 24 -> Udemy CIBAs
   - 18 - 21 -> Udemy JADSM
-  - 6 - 9 -> EOPI
-  - Contests:
+  - 6 - 9 -> EOPI [OPTIONAL]
+  - Contests: [OPTIONAL]
     - 24th 8:05pm Codeforces Round 672
     - 26th 7:30pm Codechef Cookoff
     - 27th 8:35pm Codeforces Round 673
