@@ -1,45 +1,32 @@
 //https://www.codechef.com/LRNDSA02/problems/PSHOT
 #include <iostream>
 #include <vector>
-#include <algorithm>
-#include <numeric>
 #include <string>
 using namespace std;
-#define rep(i, start, end) for (int i = start; i < end; i++)
-
 int main()
 {
-    int t;
+    int t, n;
     cin >> t;
-    vector<int> victory;
-    rep(j, 0, t)
+    while (t--)
     {
-        int n;
-        cin >> n;
-        string s;
-        cin >> s;
-        vector<int> win;
-        int a = 0, b = 0, someoneWon = 0;
-        rep(i, 0, 2 * n)
+        string goals;
+        cin >> n >> goals;
+        int i, earliest = -1, aPoints = 0, bPoints = 0, aLeft = n, bLeft = n;
+        for (i = 0; i < 2 * n; ++i)
         {
-            if (s[i] == '1')
+            if (goals[i] == '1')
+                (i % 2 ? ++bPoints : ++aPoints);
+            (i % 2 ? --bLeft : --aLeft);
+            if (bPoints > aPoints + aLeft || aPoints > bPoints + bLeft)
             {
-                if (i % 2 == 0)
-                    a++;
-                else
-                    b++;
-            }
-            if ((a > (n - i / 2 - i % 2 + b)) || b > (n - i / 2 - i % 2 - 1 + a))
-            {
-                victory.push_back(i + 1);
-                // cout << a << " " << b << endl;
-                someoneWon = 1;
+                earliest = i + 1;
                 break;
             }
         }
-        // cout << a << " " << b << endl;
-        if (someoneWon == 0)
-            victory.push_back(2 * n);
+        if (earliest == -1 || (aPoints == bPoints && i == n))
+        {
+            earliest = 2 * n;
+        }
+        cout << earliest << "\n";
     }
-    rep(j, 0, t) cout << victory[j] << endl;
 }
