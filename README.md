@@ -3,7 +3,6 @@
 - Week 01 ( 21/09 - 27/09 ) :
 
   - 14 CSES Questions
-  - DSA Learning Series -> Linear Data Structures
   - Week 1 -> CS Fundamentals-2 [THEORY]
   - Week 1 to 4 -> DS & Performance [THEORY]
   - 17 - 24 -> Udemy CIBAs
