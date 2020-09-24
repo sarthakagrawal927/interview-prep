@@ -5,8 +5,6 @@
   - 14 CSES Questions
   - Week 1 -> CS Fundamentals-2 [THEORY - Done]
   - Week 1 to 4 -> DS & Performance [THEORY]
-  - 17 - 24 -> Udemy CIBAs
-  - 18 - 21 -> Udemy JADSM
   - 6 - 9 -> EOPI [OPTIONAL]
   - Contests: [OPTIONAL]
     - 24th 8:05pm Codeforces Round 672
