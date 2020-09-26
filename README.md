@@ -12,6 +12,8 @@
     - 27th 8:35pm Codeforces Round 673
     - 27th 8:00am LeetCode Weekly Challenge 208
 
+  NO Contests participates due to TV Series
+
 - Week 02 ( 28/09 - 04/10 ) :
 - Week 03 ( 05/10 - 11/10 ) :
 - Week 04 ( 12/10 - 18/10 ) :

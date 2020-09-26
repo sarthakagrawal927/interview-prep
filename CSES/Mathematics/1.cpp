@@ -16,7 +16,6 @@ ll power(ll a, ll b)
             res = (res * a) % MOD; // if odd then take 1
             // cout << "b&" << endl;
         }
-        cout << b << endl;
 
         b >>= 1; // faster b/2
         a = (a * a) % MOD;

@@ -1,0 +1,1 @@
+//https://www.quora.com/How-can-we-calculate-a-b-c-mod-n
