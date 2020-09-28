@@ -1,4 +1,5 @@
-// https://cses.fi/problemset/task/1646
+// https://cses.fi/problemset/task/1647
+// Segment tree to be done later
 
 #include <iostream>
 #include <vector>
@@ -8,7 +9,7 @@ using namespace std;
 int main()
 {
     int n, q;
-    ll x, a, b, sum = 0;
+    ll x, a, b, min = -1e9;
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
@@ -17,18 +18,13 @@ int main()
     while (n--)
     {
         cin >> x;
-        sum += x;
-        v.push_back(sum);
+        if (min < x)
+            min = x;
+        v.push_back(min);
     }
     while (q--)
     {
         cin >> a >> b;
-        a--;
-        b--;
-        if (a == 0)
-            cout << *(v.begin() + b) << endl;
-        else
-            cout << *(v.begin() + b) - *(v.begin() + a - 1) << endl;
-    }
+        }
     return 0;
 }
