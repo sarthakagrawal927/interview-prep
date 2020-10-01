@@ -1,8 +1,9 @@
-// https://cses.fi/problemset/task/1619
+//https://cses.fi/problemset/task/1629
 #include <iostream>
 #include <string>
 #include <vector>
 #include <set>
+#include <numeric>
 #include <algorithm>
 using namespace std;
 #define MOD 1e9 + 7
@@ -14,12 +15,12 @@ using namespace std;
 #define lb cout << "\n"
 
 #define print(v)                               \
-    lb;                                        \
     for (auto i = v.begin(); i < v.end(); i++) \
         cout << *i << " ";                     \
     lb;
 
-#define takeinput(v, n, temp)  \
+#define takeinput(v, n)        \
+    ll temp;                   \
     for (ll i = 0; i < n; i++) \
     {                          \
         inp(temp);             \
@@ -49,48 +50,25 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    ll n, t1, t2, mg = MIN_INT;
+    ll n, t1, t2, count = 0, cur_end = 0;
     inp(n);
-    // Because CSES compiler was giving BT, answer was right here.
-    // if (n == 4)
-    // {
-    //     cout << 3 << endl;
-    //     return 0;
-    // }
-    vll a, b;
-    a.reserve(n);
-    b.reserve(n);
+    vector<pair<int, int>> times;
+
     for (ll i = 0; i < n; i++)
     {
         inp(t1);
         inp(t2);
-        a.emplace_back(t1);
-        b.emplace_back(t2);
+        times.emplace_back(make_pair(t2, t1)); // endtime, startime
     }
-    sort(a.begin(), a.end());
-    sort(b.begin(), b.end());
-    // print(a);
-    // print(b);
-
-    auto i = a.begin() + 1, j = b.begin();
-    ll cg = 1;
-
-    while (i < a.end() && j < b.end())
+    sort(times.begin(), times.end()); // sorts by endtime
+    for (auto ele : times)
     {
-        if (*i <= *j)
-        { // guest here
-            cg++;
-            if (mg < cg)
-                mg = cg;
-            i++;
-        }
-        else
+        if (ele.second >= cur_end)
         {
-            j++;
-            cg--;
+            cur_end = ele.first;
+            count++;
         }
     }
-
-    cout << mg << "\n";
+    cout << count;
     return 0;
 }

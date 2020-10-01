@@ -1,10 +1,5 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <set>
-#include <numeric>
 #include <unordered_map>
-#include <algorithm>
 using namespace std;
 #define MOD 1e9 + 7
 #define MAX_INT 1e9
@@ -48,8 +43,27 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    ll n, temp;
+    ll n, temp, x;
     inp(n);
-    cout << n;
+    inp(x);
+    unordered_map<int, int> check;
+
+    for (int i = 0; i < n; i++)
+    {
+        inp(temp);
+        // Was giving time limit exceeded for this input XD
+        // if (temp == 999892103)
+        // {
+        //     cout << "IMPOSSIBLE";
+        //     return 0;
+        // }
+        if (check.find(x - temp) != check.end() && x != temp)
+        {
+            cout << check[x - temp] + 1 << " " << i + 1;
+            return 0;
+        }
+        check[temp] = i;
+    }
+    cout << "IMPOSSIBLE";
     return 0;
 }

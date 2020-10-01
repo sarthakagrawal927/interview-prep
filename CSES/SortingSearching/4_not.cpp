@@ -1,8 +1,9 @@
-// https://cses.fi/problemset/task/1619
+//https://cses.fi/problemset/task/1091
 #include <iostream>
 #include <string>
 #include <vector>
 #include <set>
+#include <numeric>
 #include <algorithm>
 using namespace std;
 #define MOD 1e9 + 7
@@ -14,7 +15,6 @@ using namespace std;
 #define lb cout << "\n"
 
 #define print(v)                               \
-    lb;                                        \
     for (auto i = v.begin(); i < v.end(); i++) \
         cout << *i << " ";                     \
     lb;
@@ -49,48 +49,32 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    ll n, t1, t2, mg = MIN_INT;
+    ll n, m, temp;
     inp(n);
-    // Because CSES compiler was giving BT, answer was right here.
-    // if (n == 4)
-    // {
-    //     cout << 3 << endl;
-    //     return 0;
-    // }
-    vll a, b;
-    a.reserve(n);
-    b.reserve(n);
-    for (ll i = 0; i < n; i++)
-    {
-        inp(t1);
-        inp(t2);
-        a.emplace_back(t1);
-        b.emplace_back(t2);
-    }
-    sort(a.begin(), a.end());
-    sort(b.begin(), b.end());
-    // print(a);
-    // print(b);
+    inp(m);
+    vll price;
+    price.reserve(n);
+    takeinput(price, n, temp);
+    sort(price.begin(), price.end());
+    vll customer;
+    customer.reserve(m);
+    takeinput(customer, m, temp);
 
-    auto i = a.begin() + 1, j = b.begin();
-    ll cg = 1;
-
-    while (i < a.end() && j < b.end())
+    auto c = customer.begin();
+    auto p = price.begin();
+    while (c != customer.end() && p != price.end())
     {
-        if (*i <= *j)
-        { // guest here
-            cg++;
-            if (mg < cg)
-                mg = cg;
-            i++;
+        while (*c >= *p)
+            c++;
+        c--;
+        if (*c <= *p)
+        {
+            cout << *p << "\n";
+            c++;
+            p++;
         }
         else
-        {
-            j++;
-            cg--;
-        }
+            cout << -1 << "\n";
     }
-
-    cout << mg << "\n";
     return 0;
 }
