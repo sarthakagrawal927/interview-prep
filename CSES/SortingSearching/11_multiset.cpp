@@ -6,6 +6,7 @@
 #include <numeric>
 #include <unordered_map>
 #include <algorithm>
+
 using namespace std;
 #define MOD 1e9 + 7
 #define MAX_INT 1e9
@@ -51,6 +52,16 @@ int main()
     cout.tie(NULL);
     ll n, temp;
     inp(n);
-    cout << n;
+    multiset<int> box;
+    while (n--)
+    {
+        inp(temp);
+        auto it = box.upper_bound(temp);
+        if (it != box.end())
+            box.erase(it);
+        box.insert(temp);
+    }
+    cout << box.size();
+
     return 0;
 }

@@ -1,3 +1,5 @@
+//https://cses.fi/problemset/task/1073
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -49,8 +51,35 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    ll n, temp;
+    ll n, temp, count = 1;
+    bool b = false;
     inp(n);
-    cout << n;
+    inp(temp);
+    vll tow;
+    tow.emplace_back(temp);
+    n--;
+    while (n--)
+    {
+        inp(temp);
+        for (auto i = tow.begin(); i < tow.end(); i++)
+        {
+            if (*i > temp)
+            {
+                // cout << temp << " replacing " << *i << "\n";
+                *i = temp;
+                b = true;
+                break;
+            }
+        }
+        if (!b)
+        {
+            // cout << "not breaked"
+            //      << "\n";
+            count++;
+            tow.emplace_back(temp);
+        }
+        b = false;
+    }
+    cout << count;
     return 0;
 }
