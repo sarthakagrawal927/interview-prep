@@ -14,12 +14,6 @@ using namespace std;
 #define vi vector<int>
 #define vll vector<ll>
 #define lb cout << "\n"
-#define pi pair<int, int>
-#define F first
-#define S second
-#define PB push_back
-#define MP make_pair
-#define REP(i, a, b) for (auto i = a; i <= b; i++)
 
 #define print(v)                               \
     for (auto i = v.begin(); i < v.end(); i++) \
@@ -52,13 +46,31 @@ void inp(ll &number)
 }
 int main()
 {
-    // freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    ll n, temp;
+    ll n, x, temp, till = 0, count = 0, b = 0;
     inp(n);
-    cout << n;
+    inp(x);
+    vll vec;
+    takeinput(vec, n, temp);
+    unordered_map<ll, int> map;
+
+    for (int i = 0; i < n; i++)
+    {
+        till += vec[i]; //finding prefix
+
+        if (till == x) // if prefix is the sum
+        {
+            count++;
+        }
+
+        if (map.find(till - x) != map.end()) // if difference between x and prefix exists in map, we have already found the subarray
+        {
+            count++;
+        }
+        map[till] = i;
+    }
+    cout << count;
     return 0;
 }

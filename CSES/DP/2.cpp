@@ -14,12 +14,6 @@ using namespace std;
 #define vi vector<int>
 #define vll vector<ll>
 #define lb cout << "\n"
-#define pi pair<int, int>
-#define F first
-#define S second
-#define PB push_back
-#define MP make_pair
-#define REP(i, a, b) for (auto i = a; i <= b; i++)
 
 #define print(v)                               \
     for (auto i = v.begin(); i < v.end(); i++) \
@@ -50,15 +44,27 @@ void inp(ll &number)
     if (negative)
         number *= -1;
 }
+ll findcount(vll vec, ll n, ll sum)
+{
+    if (n == 0)
+        return 1;
+    else if (n < 0)
+        return 0;
+    else if (n <= 0 && n >= 1)
+        return 0;
+
+    return findcount(vec, n - 1, sum) + findcount(vec, n, sum - vec[n - 1]);
+}
 int main()
 {
-    // freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    ll n, temp;
+    ll n, temp, sum;
     inp(n);
-    cout << n;
+    inp(sum);
+    vll vec;
+    takeinput(vec, n, temp);
+    cout << findcount(vec, n, sum);
     return 0;
 }

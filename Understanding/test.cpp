@@ -19,7 +19,6 @@ using namespace std;
 #define S second
 #define PB push_back
 #define MP make_pair
-#define REP(i, a, b) for (auto i = a; i <= b; i++)
 
 #define print(v)                               \
     for (auto i = v.begin(); i < v.end(); i++) \
@@ -58,6 +57,7 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
     ll n, temp;
+
     inp(n);
     cout << n;
     return 0;
