@@ -4,7 +4,49 @@
 #include <vector>
 using namespace std;
 using namespace std::chrono;
+#define print(v)                               \
+    for (auto i = v.begin(); i < v.end(); i++) \
+        cout << *i << " ";
 
+void countSortRadix(vector<int> &array, int exp)
+{
+    int count[10] = {0}, output[10000], i;
+
+    int n = array.size();
+    for (i = 0; i < n; i++) // counting freq of each
+        count[(array[i] / exp) % 10]++;
+
+    for (i = 1; i < 10; i++) //prefix array
+        count[i] += count[i - 1];
+
+    for (i = n - 1; i >= 0; i--)
+    {
+        output[count[(array[i] / exp) % 10] - 1] = array[i];
+        count[(array[i] / exp) % 10]--;
+    }
+    for (i = 0; i < 10000; i++)
+        array[i] = output[i];
+}
+// COunt Sort algo 5 times faster than builtin sort till length of array = 1e5, then it slows down due to huge memory allocation
+void countSort(vector<int> &array)
+{
+    int count[10000] = {0}, output[10000], i;
+
+    int n = array.size();
+    for (i = 0; i < n; i++) // counting freq of each
+        count[array[i]]++;
+
+    for (i = 1; i < 10000; i++) //prefix array
+        count[i] += count[i - 1];
+
+    for (i = 0; i < n; i++)
+    {
+        output[count[array[i]] - 1] = array[i];
+        --count[array[i]];
+    }
+    for (i = 0; i < 10000; i++)
+        array[i] = output[i];
+}
 void bubble(vector<int> array)
 {
     int temp;
@@ -37,11 +79,19 @@ void selection(vector<int> array)
         array[m_index] = temp;
     }
 }
-
+void radixSort(vector<int> array)
+{
+    int m = *max(array.begin(), array.end());
+    for (int exp = 1; m / exp > 0; exp *= 10)
+    {
+        countSortRadix(array, exp);
+    }
+    print(array);
+}
 int main()
 {
-    int n, t;
-    cin >> n >> t;
+    int n = 10000, t = 1;
+    cin >> t;
     vector<int> values(n);
 
     auto f = []() -> int { return rand() % 10000; };
@@ -50,27 +100,44 @@ int main()
     while (t--)
     {
         auto start = high_resolution_clock::now();
+        // Introsort is used by CPP. Its a mix of heap sort, quick sort and insertion sort
         sort(values.begin(), values.end());
         auto stop = high_resolution_clock::now();
         auto duration = duration_cast<microseconds>(stop - start);
-        cout << "Time taken by cpp sort "
-             << duration.count() / 1000 << " miliseconds" << endl;
+        cout << "cpp sort "
+             << duration.count() << " microseconds" << endl;
+
+        // generate(values.begin(), values.end(), f);
+        // start = high_resolution_clock::now();
+        // bubble(values);
+        // stop = high_resolution_clock::now();
+        // duration = duration_cast<microseconds>(stop - start);
+        // cout << "bubble "
+        //      << duration.count() << " microseconds" << endl;
+
+        // generate(values.begin(), values.end(), f);
+        // start = high_resolution_clock::now();
+        // selection(values);
+        // stop = high_resolution_clock::now();
+        // duration = duration_cast<microseconds>(stop - start);
+        // cout << "selection "
+        //      << duration.count() << " microseconds" << endl;
+
+        // generate(values.begin(), values.end(), f);
+        // start = high_resolution_clock::now();
+        // countSort(values);
+        // stop = high_resolution_clock::now();
+        // duration = duration_cast<microseconds>(stop - start);
+        // cout << "count sort "
+        //      << duration.count() << " microseconds" << endl;
 
         generate(values.begin(), values.end(), f);
         start = high_resolution_clock::now();
-        bubble(values);
+        radixSort(values);
         stop = high_resolution_clock::now();
         duration = duration_cast<microseconds>(stop - start);
-        cout << "Time taken by bubble "
-             << duration.count() / 1000 << " miliseconds" << endl;
-
-        generate(values.begin(), values.end(), f);
-        start = high_resolution_clock::now();
-        selection(values);
-        stop = high_resolution_clock::now();
-        duration = duration_cast<microseconds>(stop - start);
-        cout << "Time taken by selection "
-             << duration.count() / 1000 << " miliseconds" << endl;
+        cout << "radix sort "
+             << duration.count() << " microseconds" << endl;
 
         cout << endl;
     }
