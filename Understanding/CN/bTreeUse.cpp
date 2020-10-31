@@ -90,6 +90,7 @@ BinaryTreeNode<int> *buildTree(int *in, int *pre, int size)
 {
     return buildTreeHelper(in, pre, 0, size - 1, 0, size - 1);
 }
+
 //Printing
 void printLevelWise(BinaryTreeNode<int> *root)
 {
@@ -166,15 +167,155 @@ int countNodes(BinaryTreeNode<int> *root)
     return countNodes(root->left) + countNodes(root->right) + 1;
 }
 
+int height(BinaryTreeNode<int> *root)
+{
+    if (!root)
+        return 0;
+    return 1 + max(height(root->left), height(root->right));
+}
+
+int diameter(BinaryTreeNode<int> *root)
+{
+    //max distance between any  2 nodes -> not sum of left tree height and right tree height
+    if (!root)
+        return 0;
+    int option1 = height(root->left) + height(root->right);
+    int option2 = diameter(root->left);
+    int option3 = diameter(root->right);
+    return max(max(option2, option3), option1);
+}
+
+pair<int, int> heightDiameter(BinaryTreeNode<int> *root)
+{
+    pair<int, int> p;
+    if (!root)
+    {
+        p.first = p.second = 0;
+        return p;
+    }
+    pair<int, int> leftAns = heightDiameter(root->left);
+    pair<int, int> rightAns = heightDiameter(root->right);
+
+    int lh = leftAns.first;
+    int ld = leftAns.second;
+
+    int rh = rightAns.first;
+    int rd = rightAns.second;
+
+    int height = 1 + max(lh, rh);
+    int diameter = max(lh + rh, max(ld, rd));
+
+    p.first = height;
+    p.second = diameter;
+    return p;
+}
+
+//BST
+int maximum(BinaryTreeNode<int> *root)
+{
+    if (!root)
+        return -1;
+    return max(root->data, max(maximum(root->left), maximum(root->right)));
+}
+
+int minimum(BinaryTreeNode<int> *root)
+{
+    if (!root)
+        return 1e8;
+    return min(root->data, min(minimum(root->left), minimum(root->right)));
+}
+
+// O(n2)
+bool isBST(BinaryTreeNode<int> *root)
+{
+    if (!root)
+        return true;
+
+    int leftMax = maximum(root->left);
+    int rightMin = minimum(root->right);
+    return (root->data > leftMax) && (root->data < rightMin) && isBST(root->left) && isBST(root->right);
+}
+
+class isBSTreturn
+{
+public:
+    bool isBST;
+    int minimum, maximum;
+};
+// O(n)
+isBSTreturn isBST_pro(BinaryTreeNode<int> *root)
+{
+    isBSTreturn output;
+    if (!root)
+    {
+        output.isBST = true;
+        output.minimum = 1e8;
+        output.maximum = -1e8;
+        return output;
+    }
+    isBSTreturn leftOutput = isBST_pro(root->left);
+    isBSTreturn rightOutput = isBST_pro(root->right);
+    output.minimum = min(root->data, min(rightOutput.minimum, leftOutput.minimum));
+    output.maximum = max(root->data, max(rightOutput.maximum, leftOutput.maximum));
+    output.isBST = (root->data > leftOutput.maximum) &&
+                   (root->data <= rightOutput.minimum) && leftOutput.isBST && rightOutput.isBST;
+    return output;
+}
+
+bool isBST_constraintCheck(BinaryTreeNode<int> *root, int minimum = -1e8, int maximum = 1e8)
+{
+    if (!root)
+        return true;
+    if (root->data < minimum || root->data > maximum)
+        return false;
+
+    return isBST_constraintCheck(root->left, minimum, root->data - 1) && isBST_constraintCheck(root->right, root->data, maximum);
+}
+
+bool findElement(BinaryTreeNode<int> *root)
+{
+}
+
+void printInRange(BinaryTreeNode<int> *root, int start, int end)
+{
+}
+
+BinaryTreeNode<int> *createTreeFromArray(int arr[])
+{
+}
+
+class node
+{
+public:
+    int data;
+    node *next;
+};
+
+node returnLLfromBST(BinaryTreeNode<int> *root)
+{
+}
+
 int main()
 {
-    int in[] = {4, 2, 5, 1, 8, 6, 9, 3, 7};
-    int pre[] = {1, 2, 4, 5, 3, 6, 8, 9, 7};
-    BinaryTreeNode<int> *root = buildTree(in, pre, 9);
+    // int in[] = {4, 2, 5, 1, 8, 6, 9, 3, 7};
+    // int pre[] = {1, 2, 4, 5, 3, 6, 8, 9, 7};
+    // BinaryTreeNode<int> *root = buildTree(in, pre, 9);
+    BinaryTreeNode<int> *root = takeInputLevelWise();
+
     // 1 2 3 4 5 6 7 -1 -1 -1 -1 8 9 -1 -1 -1 -1 -1 -1
 
     printLevelWise(root);
     cout << "Count: " << countNodes(root);
+    lb;
+    cout << "Diameter : " << diameter(root);
+    lb;
+    cout << "Diameter (faster) : " << heightDiameter(root).second;
+    lb;
+    cout << "IsBST : " << isBST(root);
+    lb;
+    cout << "IsBST  (faster) : " << isBST_pro(root).isBST;
+    lb;
+    cout << "IsBST by constraint check: " << isBST_constraintCheck(root);
     lb;
     cout << "Inorder : "
          << "\n";
