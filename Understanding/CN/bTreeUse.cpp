@@ -1,6 +1,6 @@
 #include <iostream>
 #include <queue>
-#include "binaryTree.h"
+#include "bst.h"
 #define lb cout << "\n"
 using namespace std;
 
@@ -280,7 +280,7 @@ void printInRange(BinaryTreeNode<int> *root, int start, int end)
 {
 }
 
-BinaryTreeNode<int> *createTreeFromArray(int arr[])
+BinaryTreeNode<int> *createTreeFromSortedArray(int arr[])
 {
 }
 
@@ -295,40 +295,81 @@ node returnLLfromBST(BinaryTreeNode<int> *root)
 {
 }
 
+vector<int> *getRootToNodePath(BinaryTreeNode<int> *root, int element)
+{
+    if (!root)
+        return NULL;
+    if (root->data == element)
+    {
+        vector<int> *output = new vector<int>();
+        output->push_back(element);
+        return output;
+    }
+
+    vector<int> *leftOutput = getRootToNodePath(root->left, element);
+    if (leftOutput != NULL)
+    {
+        leftOutput->push_back(root->data);
+        return leftOutput;
+    }
+
+    vector<int> *rightOutput = getRootToNodePath(root->right, element);
+    if (rightOutput != NULL)
+    {
+        rightOutput->push_back(root->data);
+        return rightOutput;
+    }
+    else
+        return NULL;
+}
+
+//Implement Avial Tree
 int main()
 {
     // int in[] = {4, 2, 5, 1, 8, 6, 9, 3, 7};
     // int pre[] = {1, 2, 4, 5, 3, 6, 8, 9, 7};
     // BinaryTreeNode<int> *root = buildTree(in, pre, 9);
-    BinaryTreeNode<int> *root = takeInputLevelWise();
+    // BinaryTreeNode<int> *root = takeInputLevelWise();
 
     // 1 2 3 4 5 6 7 -1 -1 -1 -1 8 9 -1 -1 -1 -1 -1 -1
 
-    printLevelWise(root);
-    cout << "Count: " << countNodes(root);
-    lb;
-    cout << "Diameter : " << diameter(root);
-    lb;
-    cout << "Diameter (faster) : " << heightDiameter(root).second;
-    lb;
-    cout << "IsBST : " << isBST(root);
-    lb;
-    cout << "IsBST  (faster) : " << isBST_pro(root).isBST;
-    lb;
-    cout << "IsBST by constraint check: " << isBST_constraintCheck(root);
-    lb;
-    cout << "Inorder : "
-         << "\n";
-    inOrder(root);
-    lb;
-    cout << "preorder : "
-         << "\n";
-    preOrder(root);
-    lb;
-    cout << "postorder : "
-         << "\n";
-    postOrder(root);
-    lb;
-    delete root;
+    // printLevelWise(root);
+    // cout << "Count: " << countNodes(root);
+    // lb;
+    // cout << "Diameter : " << diameter(root);
+    // lb;
+    // cout << "Diameter (faster) : " << heightDiameter(root).second;
+    // lb;
+    // cout << "IsBST : " << isBST(root);
+    // lb;
+    // cout << "IsBST  (faster) : " << isBST_pro(root).isBST;
+    // lb;
+    // cout << "IsBST by constraint check: " << isBST_constraintCheck(root);
+    // lb;
+
+    // vector<int> *path = getRootToNodePath(root, 9);
+    // for (int i = 0; i < path->size(); i++)
+    //     cout << path->at(i) << " ";
+    // delete root;
+    // delete path;
+
+    BST b;
+    b.insert(4);
+    b.insert(5);
+    b.insert(6);
+    b.insert(8);
+    b.insert(15);
+    b.insert(2);
+    b.insert(3);
+
+    b.printTree();
+
+    b.deleteData(6);
+    b.deleteData(4);
+    b.deleteData(5);
+    b.insert(4);
+
+    b.printTree();
+    delete &b;
     return 0;
 }
