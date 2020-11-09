@@ -272,8 +272,15 @@ bool isBST_constraintCheck(BinaryTreeNode<int> *root, int minimum = -1e8, int ma
     return isBST_constraintCheck(root->left, minimum, root->data - 1) && isBST_constraintCheck(root->right, root->data, maximum);
 }
 
-bool findElement(BinaryTreeNode<int> *root)
+bool findElement(BinaryTreeNode<int> *root, int x)
 {
+    if (!root)
+        return false;
+
+    if (root->data == x)
+        return true;
+
+    return findElement(root->left, x) || findElement(root->right, x);
 }
 
 void printInRange(BinaryTreeNode<int> *root, int start, int end)
@@ -281,17 +288,6 @@ void printInRange(BinaryTreeNode<int> *root, int start, int end)
 }
 
 BinaryTreeNode<int> *createTreeFromSortedArray(int arr[])
-{
-}
-
-class node
-{
-public:
-    int data;
-    node *next;
-};
-
-node returnLLfromBST(BinaryTreeNode<int> *root)
 {
 }
 
@@ -329,23 +325,24 @@ int main()
     // int in[] = {4, 2, 5, 1, 8, 6, 9, 3, 7};
     // int pre[] = {1, 2, 4, 5, 3, 6, 8, 9, 7};
     // BinaryTreeNode<int> *root = buildTree(in, pre, 9);
-    // BinaryTreeNode<int> *root = takeInputLevelWise();
+    BinaryTreeNode<int> *root = takeInputLevelWise();
 
     // 1 2 3 4 5 6 7 -1 -1 -1 -1 8 9 -1 -1 -1 -1 -1 -1
 
     // printLevelWise(root);
-    // cout << "Count: " << countNodes(root);
-    // lb;
-    // cout << "Diameter : " << diameter(root);
-    // lb;
-    // cout << "Diameter (faster) : " << heightDiameter(root).second;
-    // lb;
-    // cout << "IsBST : " << isBST(root);
-    // lb;
-    // cout << "IsBST  (faster) : " << isBST_pro(root).isBST;
-    // lb;
-    // cout << "IsBST by constraint check: " << isBST_constraintCheck(root);
-    // lb;
+    cout << "Count: " << countNodes(root);
+    lb;
+    cout << "Diameter : " << diameter(root);
+    lb;
+    cout << "Diameter (faster) : " << heightDiameter(root).second;
+    lb;
+    cout << "IsBST : " << isBST(root);
+    lb;
+    cout << "IsBST  (faster) : " << isBST_pro(root).isBST;
+    lb;
+    cout << "IsBST by constraint check: " << isBST_constraintCheck(root);
+    lb;
+    cout << "8 is present ? " << findElement(root, 8);
 
     // vector<int> *path = getRootToNodePath(root, 9);
     // for (int i = 0; i < path->size(); i++)
@@ -353,23 +350,23 @@ int main()
     // delete root;
     // delete path;
 
-    BST b;
-    b.insert(4);
-    b.insert(5);
-    b.insert(6);
-    b.insert(8);
-    b.insert(15);
-    b.insert(2);
-    b.insert(3);
+    // BST b;
+    // b.insert(4);
+    // b.insert(5);
+    // b.insert(6);
+    // b.insert(8);
+    // b.insert(15);
+    // b.insert(2);
+    // b.insert(3);
 
-    b.printTree();
+    // b.printTree();
 
-    b.deleteData(6);
-    b.deleteData(4);
-    b.deleteData(5);
-    b.insert(4);
+    // b.deleteData(6);
+    // b.deleteData(4);
+    // b.deleteData(5);
+    // b.insert(4);
 
-    b.printTree();
-    delete &b;
+    // b.printTree();
+    // delete &b;
     return 0;
 }
