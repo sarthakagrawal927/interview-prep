@@ -23,7 +23,7 @@ int main()
         key += c;
         int value = i + 1;
         cout << key << "  :  " << map.getValue(key) << endl;
-    }
+    } 
 
     cout << map.size();
 }
