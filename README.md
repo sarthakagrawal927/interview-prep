@@ -1,4 +1,1 @@
-My struggling failing attempt for competitive coding now visible 
-# Topics
-- Bit Manipulation
-- 
+My struggling, failing attempt for practicing data structures and algorithms now visible 
