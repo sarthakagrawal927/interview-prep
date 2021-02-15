@@ -75,7 +75,7 @@ void DFS_0_BFS_1(int **edges, int n, int choice)
     for (int j = 0; j < n; j++) // if graph not connected
     {
         if (!visited[j])
-            (choice == 0) ? printDFS(edges, n, j, visited) : printBFS(edges, n, j, visited);
+            choice ? printBFS(edges, n, j, visited) : printDFS(edges, n, j, visited); //if choice = 1, printBFS
     }
     delete[] visited;
 }
