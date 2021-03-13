@@ -3,7 +3,6 @@ class Solution
 public:
     bool isPalindrome(string s)
     {
-
         s.erase(
             std::remove_if(
                 s.begin(),
