@@ -7,16 +7,21 @@ bool check(vector<int> a, int n)
     int start = 0, end = n - 1;
     if (n <= 1)
         return true;
+    if (a[start] != 1)
+        return 0;
     while (start < end)
     {
         if (a[start] != a[end])
             return false;
         if ((a[start + 1] - a[start]) > 1)
             return false;
+        if ((a[end - 1] - a[end]) > 1)
+            return false;
+
         start++;
         end--;
     }
-    if ((a[start + 1] - a[start]) > 1)
+    if (a[start] != 7)
         return false;
     return true;
 }

@@ -11,13 +11,16 @@ int main(int argc, char const *argv[])
     cin >> t;
     while (t--)
     {
-        vector<int> arr;
         cin >> n;
-        while (n--)
+        int temp2 = n, sum = 0, mi = 1e8;
+        while (temp2--)
         {
             cin >> temp;
-            arr.push_back(temp);
-        } // 1 0 4 8 // 5 4 8 8 // 7 6 8 10 // 10 9 10 10 //
+            sum += temp;
+            if (mi > temp)
+                mi = temp;
+        }                             // 1 0 4 8 // 5 4 8 8 // 7 6 8 10 // 10 9 10 10 //
+        cout << sum - n * mi << endl; // or decrease everyone to the smallest
     }
     return 0;
 }
