@@ -1,6 +1,6 @@
 # List
 
-[Source](https://blog.usejournal.com/500-data-structures-and-algorithms-practice-problems-35afe8a1e222)
+[Source blog](https://blog.usejournal.com/500-data-structures-and-algorithms-practice-problems-35afe8a1e222)
 
 ## Array
 

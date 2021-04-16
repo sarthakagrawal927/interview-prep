@@ -1,10 +1,6 @@
 *.exe
 *.json
-/EOPI/ElementsOfProgrammingInterviews.pdf
-/CTCI/CrackingTheCodingInterview.pdf
+*.pdf
 /.vscode
-/LeetCode/Leetcode-Company-Wise-Problems-master
-/LeetCode/List/questions.pdf
-/InterviewQuestions
-/.cph
+*.cph
 /githubtoken.txt
