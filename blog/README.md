@@ -1,10 +1,12 @@
+# List
+
 [Source](https://blog.usejournal.com/500-data-structures-and-algorithms-practice-problems-35afe8a1e222)
 
-# Array
+## Array
 
 1. Find pair with given sum in the array
 2. Check if subarray with 0 sum is exists or not
-3. [TODO] Print all sub-arrays with 0 sum 
+3. [TODO] Print all sub-arrays with 0 sum
 4. Sort binary array in linear time
 5. Find a duplicate element in a limited range array
 6. Find maximum length sub-array having given sum
@@ -79,11 +81,11 @@ Find all odd occurring elements in an array having limited range of elements
 Count the distinct absolute values in the sorted array
 Print all combinations of positive integers in increasing order that sum to a given number
 Find all distinct combinations of given length — II
-Find subarrays with given sum in an array
+Find subarray with given sum in an array
 Find the surpasser count for each element of an array
 Find maximum length sequence of continuous ones (Using Sliding Window)
 Find maximum length sequence of continuous ones
-Find index that divides an array into two non-empty subarrays of equal sum
+Find index that divides an array into two non-empty subarray of equal sum
 Calculate frequency of all elements present in an array of specified range
 Rearrange the array such that it contains positive and negative numbers at alternate positions
 Find a sorted triplet in the given array
@@ -107,8 +109,8 @@ Find odd occurring element in an array in single traversal
 Find odd occurring element in logarithmic time
 Find two odd occurring elements in an array without using any extra space
 Check if given array represents min heap or not
-Find K’th smallest element in an array
-Find K’th largest element in an array
+Find Kth smallest element in an array
+Find Kth largest element in an array
 Sort a K-Sorted Array
 Merge M sorted lists of variable length
 Find smallest range with at-least one element from each of the given lists
@@ -147,7 +149,9 @@ Coin change-making problem (unlimited supply of coins)
 Coin Change Problem — Find total number of ways to get the denomination of coins
 Find maximum profit earned from at most K stock transactions
 Want to read this story later? Save it in Journal.
-Backtracking
+
+## Backtracking
+
 Print all possible solutions to N Queens Problem
 Print all Possible Knight’s Tours in a chessboard
 Find Shortest Path in Maze
@@ -168,9 +172,11 @@ Generate list of possible words from a character matrix
 Find the path between given vertices in a directed graph
 Find all Possible Topological Orderings of a DAG
 Print all shortest routes in a rectangular grid
-Binary
+
+## Binary
+
 Bit Hacks — Part 1 (Basic)
-Bit Hacks — Part 2 (Playing with k’th bit)
+Bit Hacks — Part 2 (Playing with Kth bit)
 Bit Hacks — Part 3 (Playing with rightmost set bit of a number)
 Bit Hacks — Part 4 (Playing with letters of English alphabet)
 Bit Hacks — Part 5 (Find absolute value of an integer without branching)
@@ -207,7 +213,9 @@ Huffman Coding
 Find missing number in array without using extra space
 Find odd occurring element in logarithmic time
 Find all odd occurring elements in an array having limited range of elements
-Binary Tree
+
+## Binary Tree
+
 Check if two given binary trees are identical or not
 Calculate height of a binary tree
 Delete given Binary Tree
@@ -285,7 +293,9 @@ Convert a Binary Tree into a Doubly Linked List in Spiral Order
 Check if a binary tree is a min-heap or not
 Determine if a binary tree satisfy the height-balanced property of red–black tree
 Depth first search (DFS) vs Breadth first search (BFS)
-BST
+
+## BST
+
 Insertion in BST
 Search given key in BST
 Deletion from BST
@@ -294,7 +304,7 @@ Determine if given Binary Tree is a BST or not
 Check if given keys represents same BSTs or not without building the BST
 Find inorder predecessor for given key in a BST
 Find Lowest Common Ancestor (LCA) of two nodes in a Binary Search Tree
-Find K’th smallest and K’th largest element in BST
+Find Kth smallest and Kth largest element in BST
 Floor and Ceil in a Binary Search Tree
 Find optimal cost to construct binary search tree
 Convert a Binary Tree to BST by maintaining its original structure
@@ -314,7 +324,9 @@ Construct a height-balanced BST from an unbalanced BST
 Find the size of the largest BST in a Binary Tree
 Convert a Binary Search Tree into a Min Heap
 Construct a Height-Balanced BST from a Sorted Doubly Linked List
-Divide & Conquer
+
+## Divide & Conquer
+
 Binary Search Algorithm
 Find number of rotations in a circularly sorted array
 Search an element in a circular sorted array
@@ -338,7 +350,9 @@ Unbounded Binary Search
 Interpolation search
 Merge Sort Algorithm
 QuickSort Algorithm
-Dynamic Programming
+
+## Dynamic Programming
+
 Introduction to Dynamic Programming
 Longest Common Subsequence Problem
 Longest Common Subsequence | Space optimized version
@@ -386,8 +400,8 @@ Find number of ways to fill a N x 4 matrix with 1 x 4 tiles
 Ways to reach the bottom-right corner of a matrix with exactly k turns allowed
 Weighted Interval Scheduling Problem
 Box Stacking Problem
-Find total ways to reach the n’th stair with at-most m steps
-Find total ways to reach the n’th stair from the bottom
+Find total ways to reach the nth stair with at-most m steps
+Find total ways to reach the nth stair from the bottom
 Activity Selection Problem
 Find minimum number of deletions required to convert a string into palindrome
 Calculate minimum cost to reach destination city from source city
@@ -417,7 +431,9 @@ Find maximum sum K x K sub-matrix in a given M x N matrix
 Find maximum sum submatrix present in a given matrix
 Single-Source Shortest Paths — Bellman Ford Algorithm
 All-Pairs Shortest Paths — Floyd Warshall Algorithm
-Graph
+
+## Graph
+
 Terminology and Representations of Graphs
 Graph Implementation — C, C++, C++ (STL), Java (Collections), Python
 Breadth First Search (BFS) Algorithm
@@ -459,7 +475,9 @@ Construct a directed graph from undirected graph that satisfies given constraint
 Print all k-colorable configurations of the graph (Vertex coloring of graph)
 Print All Hamiltonian Path present in a graph
 Graph Coloring Problem
-Greedy
+
+## Greedy
+
 Activity Selection Problem
 Huffman Coding
 Job Sequencing Problem with Deadlines
@@ -467,17 +485,19 @@ Graph Coloring Problem
 Kruskal’s Algorithm for finding Minimum Spanning Tree
 Single-Source Shortest Paths — Dijkstra’s Algorithm
 Shortest Superstring Problem
-Heap
+
+## Heap
+
 Introduction to Priority Queues using Binary Heaps
 Min Heap and Max Heap Implementation — C++, Java
 Heap Sort Algorithm
 Check if given array represents min heap or not
 Convert Max Heap to Min Heap in linear time
-Find K’th largest element in an array
+Find Kth largest element in an array
 Sort a K-Sorted Array
 Merge M sorted lists of variable length
 Merge K sorted linked lists
-Find K’th smallest element in an array
+Find Kth smallest element in an array
 Find smallest range with at-least one element from each of the given lists
 Merge M sorted lists each containing N elements
 Find first k non-repeating characters in a string in single traversal
@@ -487,7 +507,9 @@ Convert a Binary Search Tree into a Min Heap
 Check if a binary tree is a min-heap or not
 Huffman Coding
 External Merge Sort Algorithm
-Linked List
+
+## Linked List
+
 Introduction to Linked Lists
 Linked List Implementation — C, C++, Java, Python
 Linked List | Insertion at Tail
@@ -510,7 +532,7 @@ Intersection of two given sorted linked lists
 Reverse Linked List (Iterative Solution)
 Reverse Linked List (Recursive Solution)
 Reverse every group of k nodes in given linked list
-Find K’th node from the end in a linked list
+Find Kth node from the end in a linked list
 Merge alternate nodes of two linked lists into the first list
 Merge two sorted linked lists from their end
 Delete every N nodes in a linked list after skipping M nodes
@@ -541,7 +563,7 @@ Flatten a linked list
 Check if a Linked List of String is Palindromic
 Flatten a multilevel linked list
 Construct a height-balanced BST from an unbalanced BST
-Swap K’th node from beginning with K’th node from end in a Linked List
+Swap Kth node from beginning with Kth node from end in a Linked List
 Add two linked lists without using any extra space
 Clone a Linked List with Random Pointers
 Update random pointer for each linked list node to point to the maximum node
@@ -552,7 +574,9 @@ Convert a Binary Tree into a Doubly Linked List in Spiral Order
 Construct a Height-Balanced BST from a Sorted Doubly Linked List
 In-place merge two sorted linked lists without modifying links of the first list
 Reverse specified portion of a Linked List
-Matrix
+
+## Matrix
+
 Print Matrix in Spiral Order
 Create Spiral Matrix from given array
 Shift all matrix elements by 1 in Spiral Order
@@ -612,7 +636,9 @@ Calculate minimum cost to reach destination city from source city
 Count all paths in a matrix from first cell to last cell
 Merge M sorted lists each containing N elements
 Travelling Salesman Problem using Branch and Bound
-Puzzles
+
+## Puzzles
+
 Clock Angle Problem — Find angle between hour and minute hand
 Add two numbers without using addition operator
 Generate power set of a given set
@@ -642,7 +668,9 @@ Determine if two integers are equal without using comparison and arithmetic oper
 Return 0 and 1 with equal Probability using the specified function
 Generate random input from an array according to given probabilities
 Compute modulus division without division and modulo operator
-Queue
+
+## Queue
+
 Queue Implementation using Array/List — C, C++, Java, Python
 Queue Implementation using Linked List
 Implement Stack using Queue Data Structure
@@ -680,7 +708,9 @@ Check if an undirected graph contains cycle or not
 Find maximum cost path in graph from given source to destination
 Total paths in given digraph from given source to destination having exactly m edges
 Least cost path in given digraph from given source to destination having exactly m edges
-Sorting
+
+## Sorting
+
 Insertion Sort Algorithm
 Selection Sort Algorithm
 Bubble Sort Algorithm
@@ -707,7 +737,9 @@ Find largest number possible from set of given numbers
 Find the surpasser count for each element of an array
 Segregate positive and negative integers using Merge Sort
 Group anagrams together from given list of words
-Stack
+
+## Stack
+
 Stack Implementation using Array/List — C, C++, Java, Python
 Stack Implementation using Linked List
 Check if given expression is balanced expression or not
@@ -740,7 +772,9 @@ Invert a Binary Tree
 Print leaf to root path for every leaf node in a binary tree
 Longest Increasing Subsequence
 Invert alternate levels of a perfect binary tree
-String
+
+## String
+
 Check if given string is a rotated palindrome or not
 Longest Palindromic Substring (Non-DP Space Optimized Solution)
 Check if repeated subsequence is present in the string or not
@@ -821,7 +855,9 @@ Find shortest route in a device to construct the given string
 Find minimum number possible by doing at-most K swaps
 Determine if a pattern matches with a string or not
 Find minimum number of deletions required to convert a string into palindrome
-Trie
+
+## Trie
+
 Trie Implementation — C, C++, Java, Python
 Memory Efficient Implementation of Trie | Insert, Search and Delete
 Longest Common Prefix in given set of strings (using Trie)
