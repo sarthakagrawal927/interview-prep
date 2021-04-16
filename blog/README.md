@@ -6,7 +6,7 @@
 
 1. Find pair with given sum in the array
 2. Check if subarray with 0 sum is exists or not
-3. [TODO] Print all sub-arrays with 0 sum
+3. *TODO* Print all sub-arrays with 0 sum
 4. Sort binary array in linear time
 5. Find a duplicate element in a limited range array
 6. Find maximum length sub-array having given sum
