@@ -4,7 +4,7 @@
 
 ## Array
 
-1. Find pair with given sum in the array
+1. Find pair with given sum in the array [DONE]
 2. Check if subarray with 0 sum is exists or not
 3. _TODO_ Print all sub-arrays with 0 sum
 4. Sort binary array in linear time
@@ -24,42 +24,42 @@
 18. Move all zeros present in the array to the end
 19. Replace each element of array with product of every other element without using / operator
 20. Find Longest Bitonic Subarray in an array
-Longest Increasing Subsequence
-Find maximum difference between two elements in the array by satisfying given constraints
-Maximum Sum Subarray Problem (Kadane’s Algorithm)
-Print continuous subarray with maximum sum
-Maximum Sum Circular Subarray
-Find all distinct combinations of given length — I
-Find all distinct combinations of given length with repetition allowed
-Find maximum sequence of continuous 1’s formed by replacing at-most k zeroes by ones
-Find minimum sum subarray of given size k
-Find maximum product subarray in a given array
-Find subarray having given sum in given array of integers
-Find the length of smallest subarray whose sum of elements is greater than the given number
-Find largest number possible from set of given numbers
-Find the smallest window in array sorting which will make the entire array sorted
-Find maximum sum path involving elements of given arrays
-Maximum profit earned by buying and selling shares any number of times
-Trapping Rain Water within given set of bars
-Find minimum platforms needed in the station so to avoid any delay in arrival of any train
-Decode the array constructed from another array
-Sort an array using one swap
-Find Triplet with given sum in an array
-Length of longest continuous sequence with same sum in given binary arrays
-Reverse every consecutive m elements of the given subarray
-Maximum Product Subset Problem
-Find pairs with given difference k in the array
-Find pairs with given difference k in the array | Constant space solution
-4 sum problem | Quadruplets with given sum
-Print all quadruplets with given sum | 4-sum problem extended
-Quickselect Algorithm
-Rearrange array such that A[A[i]] is set to i for every element A[i]
-Print all Triplets that forms Arithmetic Progression
-Print all Triplets that forms Geometric Progression
-Print all combination of numbers from 1 to n having sum n
-Replace each element of the array by its corresponding rank in the array
-Print all Triplets in an array with sum less than or equal to given number
-Group elements of an array based on their first occurrence
+21. Longest Increasing Subsequence
+22. Find maximum difference between two elements in the array by satisfying given constraints
+23. Maximum Sum Subarray Problem (Kadane’s Algorithm)
+24. Print continuous subarray with maximum sum
+25. Maximum Sum Circular Subarray
+26. Find all distinct combinations of given length — I
+27. Find all distinct combinations of given length with repetition allowed
+28. Find maximum sequence of continuous 1’s formed by replacing at-most k zeroes by ones
+29. Find minimum sum subarray of given size k. 
+30. Find maximum product subarray in a given array
+31. Find subarray having given sum in given array of integers
+32. Find the length of smallest subarray whose sum of elements is greater than the given number
+33. Find largest number possible from set of given numbers
+34. Find the smallest window in array sorting which will make the entire array sorted
+35. Find maximum sum path involving elements of given arrays
+36. Maximum profit earned by buying and selling shares any number of times
+37. Trapping Rain Water within given set of bars
+38. Find minimum platforms needed in the station so to avoid any delay in arrival of any train
+39. Decode the array constructed from another array
+40. Sort an array using one swap
+41. Find Triplet with given sum in an array
+42. Length of longest continuous sequence with same sum in given binary arrays
+43. Reverse every consecutive m elements of the given subarray
+44. Maximum Product Subset Problem
+45. Find pairs with given difference k in the array
+46. Find pairs with given difference k in the array | Constant space solution
+47. 4 sum problem | Quadruplets with given sum
+48. Print all quadruplets with given sum | 4-sum problem extended
+49. Quickselect Algorithm
+50. Rearrange array such that A[A[i]] is set to i for every element A[i]
+51. Print all Triplets that forms Arithmetic Progression
+52. Print all Triplets that forms Geometric Progression
+53. Print all combination of numbers from 1 to n having sum n
+54. Replace each element of the array by its corresponding rank in the array
+55. Print all Triplets in an array with sum less than or equal to given number
+56. Group elements of an array based on their first occurrence
 Find minimum difference between index of two given elements present in the array
 Find maximum absolute difference between sum of two non-overlapping sub-arrays
 Find all Symmetric Pairs in an Array of Pairs
