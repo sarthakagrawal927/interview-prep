@@ -4,36 +4,36 @@
 
 ## Array
 
-1. Find pair with given sum in the array [DONE]
-2. Check if subarray with 0 sum is exists or not
-3. _TODO_ Print all sub-arrays with 0 sum
-4. Sort binary array in linear time
-5. Find a duplicate element in a limited range array
-6. Find maximum length sub-array having given sum
-7. Find maximum length sub-array having equal number of 0’s and 1’s
-8. Find maximum product of two integers in an array
-9. Sort an array containing 0’s, 1’s and 2’s (Dutch National Flag Problem)
-10. In place merge two sorted arrays
-11. Merge two arrays by satisfying given constraints
-12. Find index of 0 to replace to get maximum length sequence of continuous ones
-13. Shuffle a given array of elements (Fisher–Yates shuffle)
-14. Rearrange the array with alternate high and low elements
-15. Find equilibrium index of an array
-16. Find largest sub-array formed by consecutive integers
-17. Find majority element (Boyer–Moore Majority Vote Algorithm)
-18. Move all zeros present in the array to the end
-19. Replace each element of array with product of every other element without using / operator
+1. [DONE] Find pair with given sum in the array
+2. [DONE] Check if subarray with 0 sum is exists or not
+3. [TO-REVIEW] Print all sub-arrays with 0 sum
+4. [DONE] Sort binary array in linear time
+5. [DONE] Find a duplicate element in a limited range array
+6. _TODO_ Find maximum length sub-array having given sum
+7. _TODO_ Find maximum length sub-array having equal number of 0’s and 1’s
+8. _TODO_ Find maximum product of two integers in an array
+9. [DONE] Sort an array containing 0’s, 1’s and 2’s (Dutch National Flag Problem)
+10. _TODO_ In place merge two sorted arrays
+11. _TODO_ Merge two arrays by satisfying given constraints
+12. _TODO_  Find index of 0 to replace to get maximum length sequence of continuous ones
+13. _TODO_  Shuffle a given array of elements (Fisher–Yates shuffle)
+14. _TODO_  Rearrange the array with alternate high and low elements
+15. _TODO_  Find equilibrium index of an array
+16. _TODO_  Find largest sub-array formed by consecutive integers
+17. _TODO_  Find majority element (Boyer–Moore Majority Vote Algorithm)
+18. _TODO_  Move all zeros present in the array to the end
+19. [DONE]  Replace each element of array with product of every other element without using / operator
 20. Find Longest Bitonic Subarray in an array
-21. Longest Increasing Subsequence
-22. Find maximum difference between two elements in the array by satisfying given constraints
-23. Maximum Sum Subarray Problem (Kadane’s Algorithm)
-24. Print continuous subarray with maximum sum
-25. Maximum Sum Circular Subarray
-26. Find all distinct combinations of given length — I
-27. Find all distinct combinations of given length with repetition allowed
-28. Find maximum sequence of continuous 1’s formed by replacing at-most k zeroes by ones
-29. Find minimum sum subarray of given size k. 
-30. Find maximum product subarray in a given array
+21. _TODO_  Longest Increasing Subsequence
+22. _TODO_  Find maximum difference between two elements in the array by satisfying given constraints
+23. _TODO_  Maximum Sum Subarray Problem (Kadane’s Algorithm)
+24. _TODO_  Print continuous subarray with maximum sum
+25. _TODO_  Maximum Sum Circular Subarray
+26. _TODO_  Find all distinct combinations of given length — I
+27. _TODO_  Find all distinct combinations of given length with repetition allowed
+28. _TODO_  Find maximum sequence of continuous 1’s formed by replacing at-most k zeroes by ones
+29. _TODO_  Find minimum sum subarray of given size k. 
+30. _TODO_  Find maximum product subarray in a given array
 31. Find subarray having given sum in given array of integers
 32. Find the length of smallest subarray whose sum of elements is greater than the given number
 33. Find largest number possible from set of given numbers

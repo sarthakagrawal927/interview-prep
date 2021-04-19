@@ -16,7 +16,7 @@ void printAll0Subarray(vll arr)
 {
     unordered_multimap<int, int> map;
     int n = arr.size(), sum = 0;
-
+    map.insert(pair<int, int>(0, -1)); //to  count cases with 0 in start
     REP(i, 0, n)
     {
         sum += arr[i];
