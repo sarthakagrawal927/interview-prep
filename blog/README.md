@@ -4,62 +4,62 @@
 
 ## Array
 
-1. Find pair with given sum in the array
-2. Check if subarray with 0 sum is exists or not
-3. _TODO_ Print all sub-arrays with 0 sum
-4. Sort binary array in linear time
-5. Find a duplicate element in a limited range array
-6. Find maximum length sub-array having given sum
-7. Find maximum length sub-array having equal number of 0’s and 1’s
-8. Find maximum product of two integers in an array
-9. Sort an array containing 0’s, 1’s and 2’s (Dutch National Flag Problem)
-10. In place merge two sorted arrays
-11. Merge two arrays by satisfying given constraints
-12. Find index of 0 to replace to get maximum length sequence of continuous ones
-13. Shuffle a given array of elements (Fisher–Yates shuffle)
-14. Rearrange the array with alternate high and low elements
-15. Find equilibrium index of an array
-16. Find largest sub-array formed by consecutive integers
-17. Find majority element (Boyer–Moore Majority Vote Algorithm)
-18. Move all zeros present in the array to the end
-19. Replace each element of array with product of every other element without using / operator
+1. [DONE] Find pair with given sum in the array
+2. [DONE] Check if subarray with 0 sum is exists or not
+3. [TO-REVIEW] Print all sub-arrays with 0 sum
+4. [DONE] Sort binary array in linear time
+5. [DONE] Find a duplicate element in a limited range array
+6. _TODO_ Find maximum length sub-array having given sum
+7. _TODO_ Find maximum length sub-array having equal number of 0’s and 1’s
+8. _TODO_ Find maximum product of two integers in an array
+9. [DONE] Sort an array containing 0’s, 1’s and 2’s (Dutch National Flag Problem)
+10. _TODO_ In place merge two sorted arrays
+11. _TODO_ Merge two arrays by satisfying given constraints
+12. _TODO_  Find index of 0 to replace to get maximum length sequence of continuous ones
+13. _TODO_  Shuffle a given array of elements (Fisher–Yates shuffle)
+14. _TODO_  Rearrange the array with alternate high and low elements
+15. _TODO_  Find equilibrium index of an array
+16. _TODO_  Find largest sub-array formed by consecutive integers
+17. _TODO_  Find majority element (Boyer–Moore Majority Vote Algorithm)
+18. _TODO_  Move all zeros present in the array to the end
+19. [DONE]  Replace each element of array with product of every other element without using / operator
 20. Find Longest Bitonic Subarray in an array
-Longest Increasing Subsequence
-Find maximum difference between two elements in the array by satisfying given constraints
-Maximum Sum Subarray Problem (Kadane’s Algorithm)
-Print continuous subarray with maximum sum
-Maximum Sum Circular Subarray
-Find all distinct combinations of given length — I
-Find all distinct combinations of given length with repetition allowed
-Find maximum sequence of continuous 1’s formed by replacing at-most k zeroes by ones
-Find minimum sum subarray of given size k
-Find maximum product subarray in a given array
-Find subarray having given sum in given array of integers
-Find the length of smallest subarray whose sum of elements is greater than the given number
-Find largest number possible from set of given numbers
-Find the smallest window in array sorting which will make the entire array sorted
-Find maximum sum path involving elements of given arrays
-Maximum profit earned by buying and selling shares any number of times
-Trapping Rain Water within given set of bars
-Find minimum platforms needed in the station so to avoid any delay in arrival of any train
-Decode the array constructed from another array
-Sort an array using one swap
-Find Triplet with given sum in an array
-Length of longest continuous sequence with same sum in given binary arrays
-Reverse every consecutive m elements of the given subarray
-Maximum Product Subset Problem
-Find pairs with given difference k in the array
-Find pairs with given difference k in the array | Constant space solution
-4 sum problem | Quadruplets with given sum
-Print all quadruplets with given sum | 4-sum problem extended
-Quickselect Algorithm
-Rearrange array such that A[A[i]] is set to i for every element A[i]
-Print all Triplets that forms Arithmetic Progression
-Print all Triplets that forms Geometric Progression
-Print all combination of numbers from 1 to n having sum n
-Replace each element of the array by its corresponding rank in the array
-Print all Triplets in an array with sum less than or equal to given number
-Group elements of an array based on their first occurrence
+21. _TODO_  Longest Increasing Subsequence
+22. _TODO_  Find maximum difference between two elements in the array by satisfying given constraints
+23. _TODO_  Maximum Sum Subarray Problem (Kadane’s Algorithm)
+24. _TODO_  Print continuous subarray with maximum sum
+25. _TODO_  Maximum Sum Circular Subarray
+26. _TODO_  Find all distinct combinations of given length — I
+27. _TODO_  Find all distinct combinations of given length with repetition allowed
+28. _TODO_  Find maximum sequence of continuous 1’s formed by replacing at-most k zeroes by ones
+29. _TODO_  Find minimum sum subarray of given size k. 
+30. _TODO_  Find maximum product subarray in a given array
+31. Find subarray having given sum in given array of integers
+32. Find the length of smallest subarray whose sum of elements is greater than the given number
+33. Find largest number possible from set of given numbers
+34. Find the smallest window in array sorting which will make the entire array sorted
+35. Find maximum sum path involving elements of given arrays
+36. Maximum profit earned by buying and selling shares any number of times
+37. Trapping Rain Water within given set of bars
+38. Find minimum platforms needed in the station so to avoid any delay in arrival of any train
+39. Decode the array constructed from another array
+40. Sort an array using one swap
+41. Find Triplet with given sum in an array
+42. Length of longest continuous sequence with same sum in given binary arrays
+43. Reverse every consecutive m elements of the given subarray
+44. Maximum Product Subset Problem
+45. Find pairs with given difference k in the array
+46. Find pairs with given difference k in the array | Constant space solution
+47. 4 sum problem | Quadruplets with given sum
+48. Print all quadruplets with given sum | 4-sum problem extended
+49. Quickselect Algorithm
+50. Rearrange array such that A[A[i]] is set to i for every element A[i]
+51. Print all Triplets that forms Arithmetic Progression
+52. Print all Triplets that forms Geometric Progression
+53. Print all combination of numbers from 1 to n having sum n
+54. Replace each element of the array by its corresponding rank in the array
+55. Print all Triplets in an array with sum less than or equal to given number
+56. Group elements of an array based on their first occurrence
 Find minimum difference between index of two given elements present in the array
 Find maximum absolute difference between sum of two non-overlapping sub-arrays
 Find all Symmetric Pairs in an Array of Pairs
