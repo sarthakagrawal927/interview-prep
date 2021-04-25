@@ -1,13 +1,11 @@
 int Solution::maxSubArray(const vector<int> &A)
 {
-    int curr_sum = 0, max_sum = -1e9;
-    for (auto i = A.begin(); i < A.end(); i++)
+    int curr = 0, ma = -1e7;
+    for (int i = 0; i < A.size(); i++)
     {
-        curr_sum += *i;
-        if (curr_sum > max_sum)
-            max_sum = curr_sum;
-        if (curr_sum < 0)
-            curr_sum = 0;
+        curr += A[i];
+        curr = max(curr, A[i]);
+        ma = max(curr, ma);
     }
-    return max_sum;
+    return ma;
 }
