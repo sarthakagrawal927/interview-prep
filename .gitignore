@@ -1,5 +1,6 @@
 *.exe
 *.json
+*.pdf
 /.vscode
 *.cph
 *.identifier
