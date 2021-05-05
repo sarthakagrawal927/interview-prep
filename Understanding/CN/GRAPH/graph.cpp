@@ -130,6 +130,7 @@ void DFS_0_BFS_1(int **edges, int n, int choice)
     bool *visited = new bool[n];
     for (int j = 0; j < n; j++)
         visited[j] = 0;
+
     for (int j = 0; j < n; j++) // if graph not connected
     {
         if (!visited[j])
