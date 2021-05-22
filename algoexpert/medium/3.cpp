@@ -1,4 +1,4 @@
-// Find closest value in BST
+// Construction of BST
 #include <iostream>
 #include <unordered_map>
 #include <algorithm>

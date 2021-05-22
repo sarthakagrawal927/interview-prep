@@ -6,4 +6,10 @@
 
 2. smallest differences between 2 arrays
 
-3. Find closest value in BST
+3. Construction of BST
+
+4. Validate BST
+
+5. BST Traversal
+
+6. Invert BST
