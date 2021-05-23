@@ -1,4 +1,4 @@
-// Find closest value in BST
+// Validate BST
 #include <iostream>
 #include <unordered_map>
 #include <algorithm>
@@ -35,6 +35,25 @@ struct Node *insertNode(struct Node *node, int val)
     return node;
 }
 
+bool validateBSTHelper(struct Node *root, int minV, int maxV)
+{
+    if (!root)
+        return 1;
+
+    if (root->val < minV || root->val > maxV)
+        return false;
+
+    bool leftIsValid = validateBSTHelper(root->left, minV, root->val);
+    bool rightIsValid = validateBSTHelper(root->right, root->val, maxV);
+
+    return leftIsValid && rightIsValid;
+}
+
+bool validateBST(struct Node *root)
+{
+    return validateBSTHelper(root, -1e8, 1e8);
+}
+
 int main()
 {
     struct Node *root = new struct Node();
@@ -43,9 +62,9 @@ int main()
     insertNode(root, 42);
     insertNode(root, 13);
     insertNode(root, 19);
+
     inorder(root);
     cout << endl;
-    inorder(root);
-
+    cout << validateBST(root);
     return 0;
 }

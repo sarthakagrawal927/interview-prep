@@ -13,3 +13,11 @@
 5. BST Traversal
 
 6. Invert BST
+
+7. Max Subset sum no adjacent
+
+8. Number of ways to make change
+
+9. Minimum number of coins
+
+10. Levenshtein Distance
