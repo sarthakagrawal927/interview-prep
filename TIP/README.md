@@ -30,3 +30,15 @@ Just GET A REFERRAL (they get money too). Companies put a lot of value to referr
 ## 7 - Applying
 
 Interview Experiencing is really important. More offers would be more leverage , more money. 98% time do leetcode, handwrite codes. Do not a lot talk about things irrevelant to company. Junior developers are judged by your ability to learn is most important at large tech companies. Should have foundation for being a senior engineer.
+
+## 8 - The Axioms : Coding
+
+Make sure you have decided your skill (front-end, backend etc.) Choose one be really good at it but also showcase other skills too. The coding portion of the interview : can you write production based code and is structural, OOP is OP. Make clear functions in classes , with predecided variables. For recursive questions always use helper functions that is private. Make it real easy to understand. Recursion is not recommended, convert it using stack and while loop. Languages like c,c++ not recommended as they will take you much more time to code in. Be willing to write real code.
+
+## 9 - Data Structures
+
+Coming up with a nice data structure is the key. Key data structures : array, sets, hashmaps, dictionaries, queues, stacks, graphs, trees, tries. Less likely to ask red-black, priority queue,heaps etc. Composing the common data structures is important. If you think some obsecure data structure and algorithms are needed for question, you are prolly wrong. Most candidates will solve the problem, you need to be efficient and fast. More exposure the better. The question bank is limited.
+
+## 10 - Design Axiom
+
+Able to come up with analysis and offer alternatives. Understand tradeoff between space and time. Design data structures is important.
