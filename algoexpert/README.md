@@ -54,11 +54,11 @@
 
 13. River Traversal
 
-14. Min Heap Construction [TODO]
+14. Min Heap Construction
 
 15. Remove Nth Node
 
-16. Permutations [TODO]
+16. Permutations
 
 17. Power Set
 
@@ -70,7 +70,7 @@
 
 21. Longest Pallindromic string
 
-22. Suffix Trie construction [Not working]
+22. Suffix Trie construction
 
 ## Hard
 

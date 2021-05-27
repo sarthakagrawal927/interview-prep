@@ -5,42 +5,50 @@
 #include <algorithm>
 using namespace std;
 
-// Space and Time complexity : n2^n - iterative
-void getpermutations(vector<int> a, vector<int> perm, vector<vector<int>> perms)
+void printVector(vector<int> arr)
 {
-    vector<int> newPerm, newArr;
-    if (a.size() == 0)
-    {
-        for (int i = 0; i < perm.size(); i++)
-            cout << perm[i] << " ";
-        cout << endl;
-        perms.push_back(perm);
-    }
-    else
-    {
-        for (auto i = a.begin(); i < a.end(); i++)
-        {
-            newPerm.push_back(*i);
-            newArr = a;
+    for (int i = 0; i < arr.size(); i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
 
-            newArr.erase(i - a.begin() + newArr.begin());
-            getpermutations(newArr, newPerm, perms);
-        }
+void print2DVector(vector<vector<int>> arr)
+{
+    for (int i = 0; i < arr.size(); i++)
+    {
+        for (int j = 0; j < arr[i].size(); j++)
+            cout << arr[i][j] << " ";
+        cout << endl;
     }
+}
+
+void swap(vector<int> &arr, int i, int j)
+{
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
+
+void getpermutations(int i, vector<int> &a, vector<vector<int>> &perms)
+{
+    if (i == a.size() - 1)
+        perms.push_back(a);
+    else
+        for (int j = i; j < a.size(); j++)
+        {
+            swap(a, i, j);
+            getpermutations(i + 1, a, perms);
+            swap(a, i, j);
+        }
 }
 
 int main()
 {
-    vector<int> a = {1, 2, 3, 4};
-
-    vector<int> perm(a.size());
+    vector<int> a = {1, 2, 3, 4, 5, 6};
     vector<vector<int>> perms;
 
-    vector<int> arr = a;
-
-    getpermutations(arr, perm, perms);
-
-    cout << perms.size();
-
+    getpermutations(0, a, perms);
+    print2DVector(perms);
+    cout << perms.size() << endl;
     return 0;
 }
