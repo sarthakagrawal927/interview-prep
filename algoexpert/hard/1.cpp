@@ -1,42 +1,61 @@
 // 4 number sum
 
 #include <iostream>
+#include <unordered_map>
 #include <vector>
 #include <algorithm>
 using namespace std;
 
+// We divide 4 into 2 pairs, and try to implement 2 sum logic
 int main()
 {
-    vector<int> arr = {3,
-                       12,
-                       1,
-                       2,
-                       -6,
-                       5,
-                       -8,
-                       6,
-                       -3};
+    vector<int> arr = {7, 6, 4, -1, 1, 2, 3, 8};
+    int target = 16, curr_sum, diff;
+    unordered_map<int, vector<pair<int, int>>> set;
+    vector<vector<int>> ans;
     int n = arr.size();
-    int target = 0, curr_num;
-    sort(arr.begin(), arr.end());
-
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i < n - 1; i++)
     {
-        int l = i + 1, r = n - 1;
-        curr_num = arr[i]; // keeping 1 number fixed, we move left and right pointers while checking sum
-        while (l < r)
+        for (int j = i + 1; j < n; j++)
         {
-            if (arr[l] + arr[r] + curr_num == target)
+            curr_sum = arr[i] + arr[j];
+            diff = target - curr_sum;
+            if (set.find(diff) != set.end())
             {
-                cout << arr[l] << " " << arr[r] << " " << curr_num << endl;
-                l++;
-                r--;
+                for (auto k = set[diff].begin(); k < set[diff].end(); k++)
+                {
+                    vector<int> a1;
+                    a1.push_back(arr[i]), a1.push_back(arr[j]);
+                    a1.push_back((*k).first), a1.push_back((*k).second);
+                    ans.push_back(a1);
+                }
             }
-            else if (arr[l] + arr[r] + curr_num < target)
-                l++;
+        }
+
+        for (int k = 0; k < i; k++)
+        {
+            curr_sum = arr[i] + arr[k];
+            if (set.find(curr_sum) != set.end())
+            {
+                set[curr_sum].push_back(make_pair(arr[k], arr[i]));
+            }
             else
-                r--;
+            {
+                vector<pair<int, int>> a2;
+                a2.push_back(make_pair(arr[k], arr[i]));
+                set[curr_sum] = a2;
+            }
         }
     }
+
+    cout << ans.size() << endl;
+
+    for (int i = 0; i < ans.size(); i++)
+    {
+        for (int j = 0; j < 4; j++)
+            cout << ans[i][j] << " + ";
+        cout << " = " << target << endl;
+    }
+
     return 0;
 }

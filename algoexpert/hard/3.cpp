@@ -1,136 +1,39 @@
-// Construction of BST
+// largest range , like 1,2,3,4,5,6,7
+
 #include <iostream>
-#include <unordered_map>
+#include <vector>
 #include <algorithm>
+#include <unordered_map>
 using namespace std;
-
-struct Node
-{
-    struct Node *left, *right;
-    int val;
-} Node;
-
-void inorder(struct Node *root)
-{
-    if (!root)
-        return;
-    inorder(root->left);
-    cout << root->val << " ";
-    inorder(root->right);
-}
-
-bool find(struct Node *root, int target)
-{
-    int l = INT16_MAX, r = INT16_MAX;
-    struct Node *copy = root;
-    while (copy)
-    {
-        if (copy->val == target)
-            return 1;
-
-        if (target < copy->val)
-            copy = copy->left;
-        else if (target > copy->val)
-            copy = copy->right;
-    }
-    return 0;
-}
-
-struct Node *insertNode(struct Node *node, int val)
-{
-    if (!node)
-    {
-        struct Node *newNode = new struct Node();
-        newNode->left = newNode->right = NULL;
-        newNode->val = val;
-        return newNode;
-    }
-    if (node->val > val)
-        node->left = insertNode(node->left, val);
-    else
-        node->right = insertNode(node->right, val);
-    return node;
-}
-
-int getMin(struct Node *root)
-{
-    struct Node *copy = root;
-    while (copy->left)
-        copy = copy->left;
-    return copy->val;
-}
-
-void deleteNode(struct Node *root, int target)
-{
-    // cout << target;
-    int l = INT16_MAX, r = INT16_MAX;
-    struct Node *copy = root, *parentNode;
-    while (copy)
-    {
-        if (copy->val == target) // Found, now delete
-        {
-            // cout << "found";
-            // cout << parentNode->val;
-
-            if (copy->left && copy->right) // both child node
-            {
-                copy->val = getMin(copy->right);
-                deleteNode(copy->right, copy->val);
-            }
-
-            else if (!parentNode) //rootnode
-            {
-                if (copy->left)
-                    copy = copy->left;
-                else if (copy->right)
-                    copy = copy->right;
-            }
-
-            else if (parentNode->left == copy) // is left child
-            {
-                parentNode->left = (copy->left) ? copy->left : copy->right ? copy->right
-                                                                           : NULL;
-                return;
-            }
-            else if (parentNode->right == copy) // is right child
-            {
-                parentNode->right = (copy->left) ? copy->left : copy->right ? copy->right
-                                                                            : NULL;
-                return;
-            }
-            else
-            { // single node
-                copy = NULL;
-                return;
-            }
-        }
-        if (target < copy->val)
-        {
-            parentNode = copy;
-            copy = copy->left;
-        }
-        else if (target > copy->val)
-        {
-            parentNode = copy;
-            copy = copy->right;
-        }
-    }
-}
 
 int main()
 {
-    struct Node *root = new struct Node();
-    insertNode(root, 15);
-    insertNode(root, 2);
-    insertNode(root, 42);
-    insertNode(root, 13);
-    insertNode(root, 19);
-    inorder(root);
-    cout << endl;
-    deleteNode(root, 15);
-    inorder(root);
+    vector<int> a = {1, 11, 3, 0, 15, 5, 2, 4, 10, 12, 6, 8, 9, 16};
+    int n = a.size(), maxi = 0, curr = 0, maximum = -1;
+    unordered_map<int, bool> s;
 
-    cout << '\n'
-         << find(root, 15);
+    for (int i = 0; i < n; i++)
+    {
+        s[a[i]] = true;
+        maximum = max(maximum, a[i]);
+    }
+    cout << maximum << endl;
+    for (int i = 0; i < n; i++)
+    {
+        if (s[a[i]]) // not visited is true
+        {
+            s[a[i]] = false;
+            curr = 0;
+            int start = a[i];
+            while (start < maximum && s.find(start) != s.end())
+            {
+                start++;
+                curr++;
+            }
+            maxi = max(maxi, curr);
+        }
+    }
+    cout << maxi;
+
     return 0;
 }

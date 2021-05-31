@@ -1,4 +1,4 @@
-// find smallest difference
+// sub array sort -min range of element to sort to completely sort the array
 
 #include <iostream>
 #include <vector>
@@ -7,56 +7,50 @@ using namespace std;
 
 int main()
 {
-    vector<int> a = {3,
-                     12,
-                     1,
-                     2,
-                     -6,
-                     5,
-                     -8,
-                     6,
-                     -3};
+    vector<int> a = {1, 2, 4, 7, 10, 11, 6, 7, 12, 7, 16, 18, 19};
 
-    vector<int> b = {9,
-                     12,
-                     14,
-                     22,
-                     46,
-                     51,
-                     48,
-                     61,
-                     19};
-
-    sort(b.begin(), b.end());
-    sort(a.begin(), a.end());
-
-    int as = a.size(), bs = b.size(), bestdiff = 1e8;
-
-    int i = 0, j = 0;
-    int diff = abs(a[i] - b[j]);
-    bestdiff = min(diff, bestdiff);
-
-    while (i < as && j < bs)
+    int n = a.size();
+    int first, last = 0;
+    for (int i = 0; i < n; i++) // finding first and last issue
     {
-        int firstNum = a[i], secondNum = b[j];
-        if (firstNum < secondNum)
+        if (i == 0)
         {
-            diff = secondNum - firstNum;
-            i++;
+            if (a[i] > a[i + 1])
+                first = i;
         }
-        else if (firstNum > secondNum)
+
+        else if (i == n - 1)
         {
-            diff = firstNum - secondNum;
-            j++;
+            if (a[i] < a[i - 1])
+                last = i;
         }
-        else
+
+        else if (a[i] > a[i + 1] || a[i - 1] > a[i])
         {
-            bestdiff = 0;
-            break;
+            last = max(last, i);
+            first = min(first, i);
         }
-        bestdiff = min(bestdiff, diff);
     }
-    cout << bestdiff;
+
+    int minE = 1e8, maxE = -1e8;
+
+    for (int i = first; i <= last; i++) // finding minimum and maximum issue
+    {
+        minE = min(minE, a[i]);
+        maxE = max(maxE, a[i]);
+    }
+
+    int f = 0, l = n - 1; // finding position for errors
+
+    while (minE > a[f])
+        f++;
+
+    while (maxE < a[l])
+        l--;
+
+    cout << first << " " << last << endl;
+    cout << minE << " " << maxE << endl;
+    cout << f << " " << l << endl;
 
     return 0;
 }

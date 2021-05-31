@@ -74,4 +74,12 @@
 
 ## Hard
 
-Four Number sum.
+1. Four Number sum.
+
+2. Sub Array Sort
+
+3. Largest Range
+
+4. Som
+
+5. Max Sum increasing subsequence
