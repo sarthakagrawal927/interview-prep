@@ -76,3 +76,17 @@ Time Management is extremely important. Try to get the first and end note right.
 9. Fix your code at once, instead of multiple one.
 
 10. Never Give up. If you are failing, other people are failing too.
+
+## 15 - Making Resumes (not CV - its for academia)
+
+Just 1 page, only things that is relevant, you would be alright to be asked about. Tailor to the rule. If no work experience show your projects, competitions etc. Don't put technical certificates for Excel like things. Add all kind of technical projects that you can talk about. Do not add hobbies,interests unless applying in a startup, or it can be a side business. Finance companies expect competiteve nature. What I did, how I did and what impact did it made.
+
+Atleast reveal hat the challenge was, how did you accompalish and the impact. Using active verbs. Put keywords in top. Tech stack used in projects. Keep it extremely simple. Listing half projects and participating hackathons is also recommended.
+
+## 16 - Behaviorial Questions
+
+If you can work in team, handle failure and recovery, take feedback, eaguerness to learn , handle conflict with people. Have deep cover stories (3-4) for this, but do not drag stories too long so take pauses. Handling dispute. Proud of some project. Junior engineers need to show eagerness to learn. Ask questions to demonstrate this. What is your motivation for this company. Initiative and Leadership. Tackling ambiguity. Challenge -> what you did -> result. Give details but not too much through stories.
+
+## 17 - Coding Round
+
+Always write both recursive and iterative following object orient paradigm. Example question : you have a grid with different colors in it. If you have to find maximum number of same colors connected together. Write real code. If you use built-in function you need to know their complexity. Converting recursive to iterative is a good skill.
