@@ -12,11 +12,12 @@ int main()
     int n = a.size(), maxi = 0, curr = 0, maximum = -1;
     unordered_map<int, bool> s;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) // inserting all numbers with not visited as true and finding max range
     {
         s[a[i]] = true;
         maximum = max(maximum, a[i]);
     }
+
     cout << maximum << endl;
     for (int i = 0; i < n; i++)
     {

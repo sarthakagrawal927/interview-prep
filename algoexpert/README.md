@@ -83,3 +83,7 @@
 4. Max Path Sum
 
 5. Max Sum increasing subsequence
+
+6. Longest Common Subsequence
+
+7. Min number of jumps

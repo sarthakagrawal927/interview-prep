@@ -1,4 +1,4 @@
-// Max subset sum no adjacent
+// Minumum no. of jumps to go from start to end
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -6,34 +6,27 @@ using namespace std;
 
 int main()
 {
-    vector<int> a = {3,
-                     -12,
-                     1,
-                     2,
-                     -6,
-                     5,
-                     -8,
-                     6,
-                     3};
-
+    vector<int> a = {3, 4, 2, 1, 2, 3, 2, 1, 1, 1, 3};
     int n = a.size();
-    a[0] = a[0];
-    a[1] = max(a[0], a[1]);
-    for (int i = 2; i < n; i++)
+
+    vector<int> jumps(n, 1e8); // jumps needed to i index
+    jumps[0] = 0;
+
+    for (int i = 1; i < n; i++)
     {
-        a[i] = max(a[i - 1], a[i - 2] + a[i]);
+        for (int j = 0; j < i; j++)
+        {
+            if (a[j] + j >= i)
+            {
+                jumps[i] = min(jumps[i], jumps[j] + 1);
+            }
+        }
     }
-    cout << a[n - 1];
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << jumps[i] << " ";
+    }
+
     return 0;
 }
-
-/*
-   vector<int> maxsums(n);
-    maxsums[0] = a[0];
-    maxsums[1] = max(a[0], a[1]);
-    for (int i = 2; i < n; i++)
-    {
-        maxsums[i] = max(maxsums[i - 1], maxsums[i - 2] + a[i]);
-    }
-    cout << maxsums[n - 1];
-*/
