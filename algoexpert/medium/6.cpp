@@ -18,7 +18,6 @@ public:
                 work->left = work->right;
                 work->right = temp;
                 q.emplace(work->left);
-
                 q.emplace(work->right);
             }
         }

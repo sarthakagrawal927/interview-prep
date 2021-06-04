@@ -80,6 +80,6 @@
 
 3. Largest Range
 
-4. Som
+4. Max Path Sum
 
 5. Max Sum increasing subsequence

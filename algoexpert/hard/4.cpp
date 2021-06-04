@@ -1,4 +1,4 @@
-// Validate BST
+// Max Path
 #include <iostream>
 #include <unordered_map>
 #include <algorithm>
@@ -7,7 +7,7 @@ using namespace std;
 struct Node
 {
     struct Node *left, *right;
-    int val;
+    int val = 8;
 } Node;
 
 void inorder(struct Node *root)
@@ -35,23 +35,27 @@ struct Node *insertNode(struct Node *node, int val)
     return node;
 }
 
-bool validateBSTHelper(struct Node *root, int minV, int maxV)
+int max(int a, int b, int c)
 {
-    if (!root)
-        return 1;
-
-    if (root->val < minV || root->val > maxV)
-        return false;
-
-    bool leftIsValid = validateBSTHelper(root->left, minV, root->val);
-    bool rightIsValid = validateBSTHelper(root->right, root->val, maxV);
-
-    return leftIsValid && rightIsValid;
+    return max(a, max(b, c));
 }
 
-bool validateBST(struct Node *root)
+pair<int, int> mps(struct Node *node)
 {
-    return validateBSTHelper(root, -1e8, 1e8);
+    if (!node)
+        return make_pair(0, 0);
+
+    pair<int, int> left, right; //leftMaxSumAsBranch, leftMaxPathSum
+
+    left = mps(node->left);
+    right = mps(node->right);
+
+    int maxChildSumAsBranch = max(left.first, right.first);
+    int maxSumAsBranch = max(maxChildSumAsBranch, maxChildSumAsBranch + node->val);   //node val can be negative
+    int maxSumAsRootNode = max(left.first + node->val + right.first, maxSumAsBranch); // checking for triangle
+    int maxPathSum = max(left.second, right.second, maxSumAsRootNode);
+
+    return make_pair(maxSumAsBranch, maxPathSum);
 }
 
 int main()
@@ -59,12 +63,13 @@ int main()
     struct Node *root = new struct Node();
     insertNode(root, 15);
     insertNode(root, 2);
-    insertNode(root, 42);
+    insertNode(root, 14);
     insertNode(root, 13);
     insertNode(root, 19);
 
     inorder(root);
-    cout << endl;
-    cout << validateBST(root);
+    cout << "\n"
+         << mps(root).second;
+
     return 0;
 }
