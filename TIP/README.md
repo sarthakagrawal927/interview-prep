@@ -90,3 +90,7 @@ If you can work in team, handle failure and recovery, take feedback, eaguerness 
 ## 17 - Coding Round
 
 Always write both recursive and iterative following object orient paradigm. Example question : you have a grid with different colors in it. If you have to find maximum number of same colors connected together. Write real code. If you use built-in function you need to know their complexity. Converting recursive to iterative is a good skill.
+
+## 18 - Hashmap
+
+## 19 - LinkedList
