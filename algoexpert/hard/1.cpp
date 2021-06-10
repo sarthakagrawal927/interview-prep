@@ -1,9 +1,6 @@
 // 4 number sum
 
-#include <iostream>
-#include <unordered_map>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
 // We divide 4 into 2 pairs, and try to implement 2 sum logic
