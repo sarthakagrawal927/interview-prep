@@ -27,6 +27,7 @@ void countSortRadix(vector<int> &array, int exp)
     for (i = 0; i < 10000; i++)
         array[i] = output[i];
 }
+
 // COunt Sort algo 5 times faster than builtin sort till length of array = 1e5, then it slows down due to huge memory allocation
 void countSort(vector<int> &array)
 {
@@ -47,6 +48,17 @@ void countSort(vector<int> &array)
     for (i = 0; i < 10000; i++)
         array[i] = output[i];
 }
+
+void radixSort(vector<int> array)
+{
+    int m = *max(array.begin(), array.end());
+    for (int exp = 1; m / exp > 0; exp *= 10)
+    {
+        countSortRadix(array, exp);
+    }
+    print(array);
+}
+
 void bubble(vector<int> array)
 {
     int temp;
@@ -63,6 +75,7 @@ void bubble(vector<int> array)
         }
     }
 }
+
 void selection(vector<int> array)
 {
     int temp, m_index;
@@ -79,22 +92,15 @@ void selection(vector<int> array)
         array[m_index] = temp;
     }
 }
-void radixSort(vector<int> array)
-{
-    int m = *max(array.begin(), array.end());
-    for (int exp = 1; m / exp > 0; exp *= 10)
-    {
-        countSortRadix(array, exp);
-    }
-    print(array);
-}
+
 int main()
 {
     int n = 10000, t = 1;
     cin >> t;
     vector<int> values(n);
 
-    auto f = []() -> int { return rand() % 10000; };
+    auto f = []() -> int
+    { return rand() % 10000; };
     generate(values.begin(), values.end(), f);
 
     while (t--)

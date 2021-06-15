@@ -94,3 +94,13 @@ Always write both recursive and iterative following object orient paradigm. Exam
 ## 18 - Hashmap
 
 ## 19 - LinkedList
+
+## 20 - Trees
+
+## 21 - Stacks and Queue
+
+## 22 - Sorting
+
+## 23 - BST
+
+## 24 - Heap
