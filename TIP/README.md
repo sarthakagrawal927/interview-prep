@@ -104,3 +104,26 @@ Always write both recursive and iterative following object orient paradigm. Exam
 ## 23 - BST
 
 ## 24 - Heap
+
+## 25 - Bit Manipulation
+
+## 26-33 - LeetCode
+
+## 34-35 - Mock Interview
+
+Interviewer will ask about in alot of depth about any project, experience you have on your resume, the problems you face, how you recovered, tech stack, technical expertise in the field among many other things. Tell only about what you did.
+
+Technical questions, ask clarifying questions.
+Tries are important. Try to solve time and space complexity of all question you do.
+
+Ask interesting question in the end. About either the company or general or them.
+
+Try to callibrate your information based on interviewer's background. Try to guide the discussion when talking about the project.
+
+Show confidence in answering.
+
+Any additional skill would be a plus. Like leadership quality, coding activities etc.
+
+## 36 - System Design
+
+Open Ended, show your strengths -> breadth and depth both are important. Will do system design onwards later on.
