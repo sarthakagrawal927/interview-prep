@@ -87,3 +87,11 @@
 6. Longest Common Subsequence
 
 7. Min number of jumps
+
+8. Water Area
+
+9. KnapSack
+
+10. Disc Sort
+
+11. Topological Sort(Later)

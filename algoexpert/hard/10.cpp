@@ -1,54 +1,25 @@
-// Levenshtein Distance
-// minimum operations needed to convert 1 to other
+// Disk Stacking
+// Stack disk such that every disk has the smaller dimension compared to disks above it.
 
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <string>
 using namespace std;
 
-void print(vector<vector<int>> arr, int row, int col)
-{
-    for (int i = 0; i < row; i++)
-    {
-        for (int j = 0; j < col; j++)
-        {
-            cout << arr[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
-}
-
-// o(mn), space: o(mn) , space can be better by O(min(m,n))
 int main()
 {
-    string s1 = "abc", s2 = "yabd";
-    s1 = " " + s1;
-    s2 = " " + s2;
-    int l1 = s1.size(), l2 = s2.size();
-
-    vector<vector<int>> E(l1, vector<int>(l2, 0));
-
-    for (int row = 0; row < l1; row++)
+    // array of disks, having length, breath, height, maxHeight
+    vector<vector<int>> ans = {{2, 2, 1, 1}, {2, 1, 2, 2}, {3, 2, 3, 3}, {2, 3, 4, 4}, {4, 4, 5, 5}, {2, 2, 8, 8}};
+    int n = ans.size();
+    for (int i = 1; i < n; i++)
     {
-        for (int col = 0; col < l2; col++)
+        for (int j = i - 1; j >= 0; j--)
         {
-            if (row == 0)
-                E[row][col] = col; //getting first row as {0,1,2,3,4, ...}
-
-            else if (col == 0)
-                E[row][col] = row; //getting first col as {0,1,2,3,4, ...}
-
-            else if (s1[row] == s2[col])
-                E[row][col] = E[row - 1][col - 1];
-
-            else
-                E[row][col] = 1 + min(E[row - 1][col - 1], min(E[row - 1][col], E[row][col - 1]));
+            if (ans[i][0] > ans[j][0] && ans[i][1] > ans[j][1] && ans[i][2] > ans[j][2])
+                ans[i][3] = max(ans[i][3], ans[j][3] + ans[i][2]);
+            cout << ans[i][3] << " ";
         }
-        print(E, l1, l2);
     }
-    cout << E[l1 - 1][l2 - 1];
-
+    cout << ans[n - 1][3];
     return 0;
 }
