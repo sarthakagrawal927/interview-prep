@@ -100,9 +100,9 @@
 
 13.
 
-14.
+14. Find Loop
 
-15.
+15. Shifted Binary Search
 
 16.
 
@@ -126,4 +126,4 @@
 
 6.
 
-7. Merge Sort
+7. Merge Sort (Later)
