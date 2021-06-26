@@ -1,46 +1,63 @@
-// Permutations
+// Search for range
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
-
-// Space and Time complexity : n2^n - iterative
-void getpermutations(vector<int> a, vector<int> perm, vector<vector<int>> perms)
+class Solution
 {
-    vector<int> newPerm, newArr;
-    if (a.size() == 0)
+public:
+    vector<int> searchRange(vector<int> &nums, int target)
     {
-        for (int i = 0; i < perm.size(); i++)
-            cout << perm[i] << " ";
-        cout << endl;
-        perms.push_back(perm);
-    }
-    else
-    {
-        for (auto i = a.begin(); i < a.end(); i++)
+        vector<int> ans;
+        ans.push_back(-1);
+        ans.push_back(-1);
+        int n = nums.size();
+
+        int hi = n - 1, lo = 0;
+        while (lo <= hi)
         {
-            newPerm.push_back(*i);
-            newArr = a;
-
-            newArr.erase(i - a.begin() + newArr.begin());
-            getpermutations(newArr, newPerm, perms);
+            int m = (lo + hi) / 2;
+            if (nums[m] == target)
+            {
+                cout << m << " ";
+                if (m > 0 && nums[m - 1] == target)
+                {
+                    hi = m - 1;
+                }
+                else
+                {
+                    ans[0] = m;
+                    break;
+                }
+            }
+            else if (nums[m] < target)
+            {
+                lo = m + 1;
+            }
+            else
+                hi = m - 1;
         }
+        lo = 0, hi = n - 1;
+        while (lo <= hi)
+        {
+            int m = (lo + hi) / 2;
+            if (nums[m] == target)
+            {
+                cout << m << " ";
+                if (m < n - 1 && nums[m + 1] == target)
+                {
+                    lo = m + 1;
+                }
+                else
+                {
+                    ans[1] = m;
+                    break;
+                }
+            }
+            else if (nums[m] < target)
+            {
+                lo = m + 1;
+            }
+            else
+                hi = m - 1;
+        }
+        return ans;
     }
-}
-
-int main()
-{
-    vector<int> a = {1, 2, 3, 4};
-
-    vector<int> perm(a.size());
-    vector<vector<int>> perms;
-
-    vector<int> arr = a;
-
-    getpermutations(arr, perm, perms);
-
-    cout << perms.size();
-
-    return 0;
-}
+};

@@ -98,15 +98,15 @@
 
 12.
 
-13.
+13. Continuous Heap (later)
 
 14. Find Loop
 
 15. Shifted Binary Search
 
-16.
+16. Search of range
 
-17.
+17. Quick Select
 
 18.
 

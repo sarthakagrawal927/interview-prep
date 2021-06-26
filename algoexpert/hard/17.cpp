@@ -1,37 +1,37 @@
-// Power Set
+// Quick Select kth largest
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
-
-// Space and Time complexity : n2^n - iterative
-int main()
+class Solution
 {
-    vector<int> a = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-    vector<vector<int>> power;
-    vector<int> single = {};
-
-    power.push_back(single);
-
-    for (int i = 0; i < a.size(); i++)
+public:
+    int findKthLargest(vector<int> &nums, int k)
     {
-        int n = power.size();
-        for (int j = 0; j < n; j++)
+        //partition rule: >=pivot   pivot   <=pivot
+        int left = 0, right = nums.size() - 1, idx = 0;
+        while (1)
         {
-            single = power[j];
-            single.push_back(a[i]);
-            power.push_back(single);
+            idx = partition(nums, left, right);
+            if (idx == k - 1)
+                break;
+            else if (idx < k - 1)
+                left = idx + 1;
+            else
+                right = idx - 1;
         }
+        return nums[idx];
     }
-
-    for (int i = 0; i < power.size(); i++)
-    {
-        for (int j = 0; j < power[i].size(); j++)
+    int partition(vector<int> &nums, int left, int right)
+    { //hoare partition
+        int pivot = nums[left], l = left + 1, r = right;
+        while (l <= r)
         {
-            cout << power[i][j] << "  ";
+            if (nums[l] < pivot && nums[r] > pivot)
+                swap(nums[l++], nums[r--]);
+            if (nums[l] >= pivot)
+                ++l;
+            if (nums[r] <= pivot)
+                --r;
         }
-        cout << "\n";
+        swap(nums[left], nums[r]);
+        return r;
     }
-    return 0;
-}
+};
