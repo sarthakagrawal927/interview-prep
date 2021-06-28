@@ -1,55 +1,74 @@
-// Create Suffix trie
-
-#include <iostream>
-#include <string>
-#include <algorithm>
-#include <vector>
+// pattern matching
+#include <bits/stdc++.h>
 using namespace std;
 
-struct Node
+string getNewPattern(string s)
 {
-    char val;
-    vector<struct Node *> kids;
-} Node;
-
-struct Node *isAKid(vector<struct Node *> kids, char c)
-{
-    for (int i = 0; i < kids.size(); i++)
-    {
-        if (kids[i]->val == 'c')
-            return kids[i];
-    }
-    return NULL;
+    if (s[0] != 'x')
+        for (int i = 0; i < s.size(); i++)
+            s[i] = s[i] == 'x' ? 'y' : 'x';
+    return s;
 }
 
-void insertSubstring(struct Node *root, string s)
+int countY(string s)
 {
-    struct Node *temp;
-    // cout << s << " ";
+    int c = 0;
     for (int i = 0; i < s.size(); i++)
-    {
-        char letter = s[i];
-        struct Node *t = isAKid(temp->kids, letter);
-        if (!t)
-            t->val = s[i];
-        temp = t;
-    }
-    temp->val = '*';
+        if (s[i] == 'y')
+            c++;
+    return c;
 }
 
-void insert(struct Node *root, string s)
+int countStartX(string s)
 {
-    for (int i = 0; i < s.size(); i++)
+    int c = 0, i = 0;
+    while (s[i++] == 'x')
+        c++;
+    return c;
+}
+
+bool checkAnswer(string pattern, string x, string y, string out)
+{
+    string ans = "";
+    for (int i = 0; i < pattern.size(); i++)
     {
-        insertSubstring(root, s.substr(i, s.size()));
+        if (pattern[i] == 'x')
+            ans += x;
+        else
+            ans += y;
     }
+    return ans == out;
+}
+
+pair<string, string> getSoln(string s1, string s2)
+{
+    int n = s2.size();
+    s1 = getNewPattern(s1);
+    int yc = countY(s1);
+    int xc = s1.size() - yc;
+    int startX = countStartX(s1);
+    int xl = 1;
+    string x, y;
+    while (true)
+    {
+        if ((n - xl * xc) % yc)
+            continue;
+        int yl = (n - xl * xc) / yc;
+        if (yl < 1)
+            break;
+        y = s2.substr(startX * xl, yl);
+        x = s2.substr(0, xl);
+        xl++;
+        if (checkAnswer(s1, x, y, s2))
+            break;
+    }
+    return make_pair(x, y);
 }
 
 int main()
 {
-    string s = "abcdc";
-    struct Node *head = new struct Node;
-    head->val = 'o';
-    head->kids = {};
-    insert(head, s);
+    string s1 = "xxyxxy";
+    string s2 = "gogopowerrangergogopowerranger";
+    cout << getSoln(s1, s2).second;
+    return 0;
 }
