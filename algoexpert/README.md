@@ -116,7 +116,7 @@
 
 1. Iterative In Order
 
-2. Max profit with K transactions (Later)
+2. Max profit with K transactions
 
 3. Pallindrome Partioning Min Cuts (Later)
 
@@ -124,6 +124,6 @@
 
 5. LRU Cache (Later)
 
-6. Number of Binary Tree Topologies (Later)
+6. Number of Binary Tree Topologies
 
 7. Merge Sort (Later)

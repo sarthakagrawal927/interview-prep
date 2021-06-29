@@ -1,55 +1,42 @@
 // Number of bniary tree toplogies
 #include <bits/stdc++.h>
 using namespace std;
-
-struct Node
+// (2n)!/ (n!*(n+1)!)
+int getTopologies(int n, vector<int> &a)
 {
-    struct Node *left, *right;
-    int val;
-} Node;
+    int s = 0;
+    if (a[n] != 0)
+        return a[n];
 
-void inorder(struct Node *root)
-{
-    struct Node *curr = root;
-    stack<struct Node *> s;
-    while (curr || s.size())
-    {
-        while (curr)
-        {
-            s.push(curr);
-            curr = curr->left;
-        }
-        curr = s.top();
-        s.pop();
-        cout << curr->val << " ";
-        curr = curr->right;
-    }
+    for (int i = 0; i < n; i++)
+        s = s + getTopologies(i, a) * getTopologies(n - i - 1, a);
+
+    a[n] = s;
+    return s;
 }
 
-struct Node *insertNode(struct Node *node, int val)
+int getTopologiesIterative(int n, int s)
 {
-    if (!node)
+    vector<int> ans(n + 1, 0);
+    ans[0] = 1;
+    for (int i = 1; i <= n; i++)
     {
-        struct Node *newNode = (struct Node *)malloc(sizeof(struct Node *));
-        newNode->left = newNode->right = NULL;
-        newNode->val = val;
-        return newNode;
+        for (int j = 0; j < i; j++)
+        {
+            ans[i] += ans[j] * ans[i - 1 - j];
+        }
     }
-    if (node->val > val)
-        node->left = insertNode(node->left, val);
-    else
-        node->right = insertNode(node->right, val);
-    return node;
+    return ans[n];
 }
 
 int main()
 {
-    int n = 3;
-    struct Node *root = NULL;
-    root = insertNode(root, 15);
-    root = insertNode(root, 2);
-    root = insertNode(root, 42);
-    inorder(root);
+    int n = 7;
+    long int s = 0;
+    vector<int> ans(n + 1, 0);
+    ans[0] = 1;
+    cout << getTopologiesIterative(n, s) << " ";
+    cout << getTopologies(n, ans);
 
     return 11;
 }
