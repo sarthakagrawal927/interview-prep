@@ -56,7 +56,7 @@ bool validateBST(struct Node *root)
 
 int main()
 {
-    struct Node *root = new struct Node();
+    struct Node *root = NULL;
     insertNode(root, 15);
     insertNode(root, 2);
     insertNode(root, 42);

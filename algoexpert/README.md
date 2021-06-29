@@ -96,9 +96,9 @@
 
 11. Topological Sort(Later)
 
-12.
+12. Boggle Board(Later)
 
-13. Continuous Heap (later)
+13. Continuous median
 
 14. Find Loop
 
@@ -108,22 +108,22 @@
 
 17. Quick Select
 
-18.
+18. Pattern Match
 
-19.
+19. Heap Sort
 
 ## Very Hard
 
-1.
+1. Iterative In Order
 
-2.
+2. Max profit with K transactions (Later)
 
-3.
+3. Pallindrome Partioning Min Cuts (Later)
 
-4.
+4. Knuth-Morris-Pratt Algo (Later)
 
-5.
+5. LRU Cache (Later)
 
-6.
+6. Number of Binary Tree Topologies (Later)
 
 7. Merge Sort (Later)
