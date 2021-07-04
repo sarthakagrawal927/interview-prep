@@ -1,3 +1,3 @@
 # About
 
-My struggling, failing attempt for practicing data structures and algorithms now visible.
+My struggling, failing attempt for preparing for interviews now visible.
