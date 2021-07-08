@@ -18,11 +18,11 @@ GS
 Cisco
 Amazon
 Citrix
-Dboi
 Oracle
-Black rock
+Dell
+Blackrock
 JP morgan
-Mornfan Stanley
+Morngan Stanley
 Cloudera
 Komprise india
 Nutanix
@@ -32,39 +32,4 @@ Axxela Advisory
 Sap labs
 Tejas network
 Ubs business
-
-## GS
-
-## Cisco
-
-## Amazon
-
-## Citrix
-
-## Dboi
-
-## Oracle
-
-## Black rock
-
-## JP morgan
-
-## Mornfan Stanley
-
-## Cloudera
-
-## Komprise india
-
-## Nutanix
-
-## Zs associates
-
-## Wdc
-
-## Axxela Advisory
-
-## Sap labs
-
-## Tejas network
-
-## Ubs business
+VMWare
