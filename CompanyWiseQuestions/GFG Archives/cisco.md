@@ -39,34 +39,31 @@
 
 ## CN
 
-TCP & UDP -> examples, differences, how connections made
-MAC address & IP, IP Header
-TCP 3way handshake
-TCP/IP modal, OSI modal -> all layers functions and explanation
-IPV4 vs IPV6 - can IPv6 device run IPv4 addresses.
-Switch Vs Router Vs Bridge - what layers they belong to.
-ICMP, VLAN, HTTP
-DNS - caching, poisoning, securing
-Protocols - FTP, DHCP, ARP - port numbers and functioning
-Socket Programming
-Subnetting and super netting
-Modem, Ethernet Cables, NIC - working ,uses - everything you see at home
-Different Network errors and troubleshooting them
-How URL works, detail explanation of steps when you search a url, when you send WhatsApp to a friend
-Routing  - Algorithms - flood routing, Protocols, Uses in detail
-
+* TCP & UDP -> examples, differences, how connections made
+* MAC address & IP, IP Header
+* TCP 3way handshake
+* TCP/IP modal, OSI modal -> all layers functions and explanation
+* IPV4 vs IPV6 - can IPv6 device run IPv4 addresses.
+* Switch Vs Router Vs Bridge - what layers they belong to.
+* ICMP, VLAN, HTTP
+* DNS - caching, poisoning, securing
+* Protocols - FTP, DHCP, ARP - port numbers and functioning
+* Socket Programming
+* Subnetting and super netting
+* Modem, Ethernet Cables, NIC - working ,uses - everything you see at home
+* Different Network errors and troubleshooting them
+* How URL works, detail explanation of steps when you search a url, when you send WhatsApp to a friend
+* Routing  - Algorithms - flood routing, Protocols, Uses in detail
+* Ping, TraceRoute, TTL
 * If you log in to Facebook and let’s say it is not responding what will be your troubleshooting method?
 * Difference between RIP and Link State Routing.
 * Handling multiple clients in a chat system
-* what is the ping
 * Gateway protocols, Encryption
 * How you check the user authentication?
 * How the datagram packet converts into the frame and how the computer decides the size of the frame.
 * How sender confirms that the send data will successfully send or not.
-* Explain traceRoute
 * Explain Sliding window protocol
 * Fragmentation in IP packets
-* Explain TTL
 * In case of any fault in a path, how does a dynamic routing protocol switches path?
 * What is an atomic transaction? How can you ensure if a transaction is atomic?
 * What are the classes in classful addressing and what range of addresses belong to each class?
