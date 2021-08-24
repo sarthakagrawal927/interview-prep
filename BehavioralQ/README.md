@@ -15,3 +15,7 @@
 7) Describe a time when you overcame a difficult technical problem.
 
 8) Tell me about a challenging interaction with your teammate?
+
+Where you will see yourself after 3 years?
+How do you influence people?
+Failures? Learning from failure.
