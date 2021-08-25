@@ -3,17 +3,15 @@
 
 ## OS
 
-* Paging, Thrashing, Segmentation
-* Multithreading questions - mutex, semaphores, threads, advantages
-* CPU Scheduling - Context Switching
-* Job Scheduling - preemptive and non, all types with DS
-* Process - states,properties, storage, inter-process Communication, IPC processes
-* Deadlock - prevention, causes ,types , examples
-* Memory - Recycle Bin implementation, different types , shared memories
-* Priority Inversion
-* synchronization
-* What are the different components in PCB and explain it’s structure?
-* message passing and pipes.
+1. Paging, Thrashing, Segmentation
+2. Multithreading questions - mutex, semaphores, threads, advantages
+3. CPU Scheduling
+4. Process - states,properties, storage, inter-process Communication, IPC processes
+5. Deadlock - prevention, causes ,types , examples
+6. Memory - Recycle Bin implementation, different types , shared memories
+7. Priority Inversion
+8. What are the different components in PCB and explain it’s structure?
+9. message passing and pipes.
 
 ## DSA
 
@@ -39,34 +37,34 @@
 
 ## CN
 
-* TCP & UDP -> examples, differences, how connections made
-* MAC address & IP, IP Header
-* TCP 3way handshake
-* TCP/IP modal, OSI modal -> all layers functions and explanation
-* IPV4 vs IPV6 - can IPv6 device run IPv4 addresses.
-* Switch Vs Router Vs Bridge - what layers they belong to.
-* ICMP, VLAN, HTTP
-* DNS - caching, poisoning, securing
-* Protocols - FTP, DHCP, ARP - port numbers and functioning
-* Socket Programming
-* Subnetting and super netting
-* Modem, Ethernet Cables, NIC - working ,uses - everything you see at home
-* Different Network errors and troubleshooting them
-* How URL works, detail explanation of steps when you search a url, when you send WhatsApp to a friend
-* Routing  - Algorithms - flood routing, Protocols, Uses in detail
-* Ping, TraceRoute, TTL
-* If you log in to Facebook and let’s say it is not responding what will be your troubleshooting method?
-* Difference between RIP and Link State Routing.
-* Handling multiple clients in a chat system
-* Gateway protocols, Encryption
-* How you check the user authentication?
-* How the datagram packet converts into the frame and how the computer decides the size of the frame.
-* How sender confirms that the send data will successfully send or not.
-* Explain Sliding window protocol
-* Fragmentation in IP packets
-* In case of any fault in a path, how does a dynamic routing protocol switches path?
-* What is an atomic transaction? How can you ensure if a transaction is atomic?
-* What are the classes in classful addressing and what range of addresses belong to each class?
+1. TCP & UDP -> examples, differences, how connections made
+2. MAC address & IP, IP Header
+3. TCP 3way handshake
+4. TCP/IP modal, OSI modal -> all layers functions and explanation
+5. IPV4 vs IPV6 - can IPv6 device run IPv4 addresses.
+6. Switch Vs Router Vs Bridge - what layers they belong to.
+7. ICMP, VLAN, HTTP , HTTPS
+8. DNS - caching, poisoning, securing
+9. Protocols - FTP, DHCP, ARP - port numbers and functioning
+10. Socket Programming
+11. Subnetting and super netting
+12. Modem, Ethernet Cables, NIC - working ,uses - everything you see at home
+13. Different Network errors and troubleshooting them
+14. How URL works, detail explanation of steps when you search a url, when you send WhatsApp to a friend
+15. Routing  - Algorithms - flood routing, Protocols, Uses in detail
+16. Ping, TraceRoute, TTL
+17. If you log in to Facebook and let’s say it is not responding what will be your troubleshooting method?
+18. Difference between RIP and Link State Routing.
+19. Handling multiple clients in a chat system
+20. Gateway protocols, Encryption
+21. How you check the user authentication?
+22. How the datagram packet converts into the frame and how the computer decides the size of the frame.
+23. How sender confirms that the send data will successfully send or not.
+24. Explain Sliding window protocol
+25. Fragmentation in IP packets
+26. In case of any fault in a path, how does a dynamic routing protocol switches path?
+27. What is an atomic transaction? How can you ensure if a transaction is atomic?
+28. What are the classes in classful addressing and what range of addresses belong to each class?
 
 Ask :
-How do you ensure you are the most secure company
+How do you ensure you are the most secure company?
