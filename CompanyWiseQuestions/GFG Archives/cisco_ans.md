@@ -18,11 +18,35 @@
 
           Transport Layer - Transmits data using transmission protocols like UDP, TCP.
 
-          Network Layer - Decides the physical path the data will take, the route. Packets, IP, ICMP, Routers
+          Network Layer - Decides the physical path the data will take, the route. Packets, IP, ICMP, Routers, ARP
 
           Data Link - Defines raw format of data on the network, frames. Switches, bridges etc
 
           Physical - Wires, wireless, ethernet. NIC
+
+4. IPV4 is no longer used as it has limit of 4.3billion (being 32 bit address) whereas IPV6 is less prone to that limitation as it is of 128 bits which allows it to have much more addresses. Usually devices have dual stack model in which every time the device wants to send visit an url it will issue 2 dns requests - one for IPV4 and other for IPV6, if both then IPV6 is given preference.
+
+5. A router is a device that joins networks together and routes traffic between them.
+    A gateway is the last router that connects your network to the larger network. Network Layer, connects 2 different kinds of networks.
+    A switch connects multiple devices together to a router, a hub is just a dumb switch.
+
+    A modem is part of Data Link layer which connects the internal network to the external network.
+
+    Bridge - Data Link layer, connects multiple LAN with similar protocol and provides communication between the nodes in them.
+
+6. ICMP - Internet Control Message Protocol - its a protocol which is used by devices across the network to communicate about the problems with transmission. Ping uses ICMP (send and receive ICMP echo req) to determine the reachability of host on internet.
+
+   VLAN - virtual LAN , computers connected virtually to share resources , solves broadcast problem and allows us to additional layer of security (At data link layer)
+
+   hTTP - application layer - designed to communicate between servers and browsers through HTML files.
+
+7. DNS - temp database maintained by OS, contains record of all recently visited websites, if it can't find a particular url, it sends query to your resolver server i.e. your ISP. As it uses UDP it is not very secure and can be poisoned. It can be poisoned when a dns name resolving request is intercepted by 3rd party and sends malicious/wrong website which is then stored in the db too. It can be fixed by reducing TTL( time to live) (the duration for which it is cached)
+
+8. ARP - (Address Resolution Protocol used in network layer) maps IP address to MAC address
+
+   DHCP - (Dynamic Host Configuration Protocol) - automatically provides and assigns IP address, default Gateway , mask etc
+
+9. Subnetting - Logical division of an IP address, decreasing the bits for host addresses whereas increasing the bits of network address. Supernetting is just opposite of this.
 
 ## OS
 

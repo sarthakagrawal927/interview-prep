@@ -43,23 +43,13 @@
 7. DNS - caching, poisoning, securing
 8. Protocols - FTP, DHCP, ARP - port numbers and functioning
 9. Subnetting and super netting
-10. Modem, Ethernet Cables, NIC - working ,uses - everything you see at home
-11. Different Network errors and troubleshooting them
-12. How URL works, detail explanation of steps when you search a url, when you send WhatsApp to a friend
-13. Routing  - Algorithms - flood routing, Protocols, Uses in detail
-14. Ping, TraceRoute, TTL
-15. If you log in to Facebook and let’s say it is not responding what will be your troubleshooting method?
-16. Difference between RIP and Link State Routing.
-17. Handling multiple clients in a chat system
-18. Gateway protocols, Encryption
-19. How you check the user authentication?
-20. How the datagram packet converts into the frame and how the computer decides the size of the frame.
-21. How sender confirms that the send data will successfully send or not.
-22. Explain Sliding window protocol
-23. Fragmentation in IP packets
-24. In case of any fault in a path, how does a dynamic routing protocol switches path?
-25. What is an atomic transaction? How can you ensure if a transaction is atomic?
-26. What are the classes in classful addressing and what range of addresses belong to each class?
+10. Routing  - Algorithms - flood routing, Protocols, Uses in detail
+11. How the datagram packet converts into the frame and how the computer decides the size of the frame.
+12. How sender confirms that the send data will successfully send or not.
+13. Explain Sliding window protocol
+14. Fragmentation in IP packets
+15. In case of any fault in a path, how does a dynamic routing protocol switches path?
+16. What are the classes in classful addressing and what range of addresses belong to each class?
 
 Ask :
 How do you ensure you are the most secure company?
