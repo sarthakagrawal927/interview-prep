@@ -14,17 +14,17 @@
 
 ## Companies (coming at MIT, Manipal)
 
-GS
-Cisco
+GS - rejected
+Cisco - rejected
 Amazon
-Citrix
+Citrix - rejected
 Oracle
 Dell
-Blackrock
+BlackRock
 JP morgan
-Morngan Stanley
+Morgan Stanley
 Cloudera
-Komprise india
+Komprise - rejected
 Nutanix
 Zs associates
 Wdc
@@ -32,4 +32,4 @@ Axxela Advisory
 Sap labs
 Tejas network
 Ubs business
-VMWare
+VMWare - rejected
