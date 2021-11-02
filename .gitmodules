@@ -4,3 +4,6 @@
 [submodule "remoteJobs"]
 	path = remoteJobs
 	url = https://github.com/remoteintech/remote-jobs
+[submodule "hiringWOwhiteboards"]
+	path = hiringWOwhiteboards
+	url = https://github.com/poteto/hiring-without-whiteboards
