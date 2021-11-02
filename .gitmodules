@@ -7,3 +7,6 @@
 [submodule "hiringWOwhiteboards"]
 	path = hiringWOwhiteboards
 	url = https://github.com/poteto/hiring-without-whiteboards
+[submodule "CompleteGuide"]
+	path = CompleteGuide
+	url = https://github.com/Olshansk/interview
