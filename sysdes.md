@@ -1,28 +1,6 @@
 # System Design Interview Prep
 
-## All system design youtube channels
-
-1. <https://www.youtube.com/user/dimakorolev/videos>
-1. <https://www.youtube.com/c/ByteByByte/videos>
-1. <https://www.youtube.com/channel/UC_n-A84J0UcU5uq4sEh2CnQ>
-1. <https://www.youtube.com/c/DefogTech/videos>
-1. <https://www.youtube.com/c/HusseinNasser-software-engineering/videos>
-1. <https://www.youtube.com/c/SystemDesignInterview/videos>
-1. <https://www.youtube.com/c/sudoCODE/videos>
-1. <https://www.youtube.com/c/codeKarle/videos>
-1. <https://www.youtube.com/c/CMUDatabaseGroup/videos>
-1. <https://www.youtube.com/c/interviewingio/videos>
-1. <https://www.youtube.com/c/GauravSensei/videos>
-1. <https://www.youtube.com/c/EngineeringwithUtsav/videos>
-1. <https://www.youtube.com/channel/UClB4KPy5LkJj1t3SgYVtMOQ/videos>
-1. <https://www.youtube.com/c/ExponentTV/videos>
-1. <https://www.youtube.com/c/TheInterviewSage/videos>
-1. <https://www.youtube.com/c/ThinkSoftware/videos>
-1. <https://www.youtube.com/c/SuccessinTech/videos>
-1. <https://www.youtube.com/c/TechDummiesNarendraL/videos>
-1. <https://www.youtube.com/c/OktaDev/videos>
-
-## Imp keywords
+## Imp Topics
 
 1. Write ahead logging
 1. SSL passthrough / termination on load balancers
