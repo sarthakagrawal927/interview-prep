@@ -1,7 +1,7 @@
 # System Design Interview Prep Master Doc
 
-[pooja biswas | LinkedIn](https://www.linkedin.com/in/pooja-biswas-467b3348/)
-# All system design youtube channels
+## All system design youtube channels
+
 1. <https://www.youtube.com/user/dimakorolev/videos>
 1. <https://www.youtube.com/c/ByteByByte/videos>
 1. <https://www.youtube.com/channel/UC_n-A84J0UcU5uq4sEh2CnQ>
@@ -16,14 +16,12 @@
 1. <https://www.youtube.com/c/EngineeringwithUtsav/videos>
 1. <https://www.youtube.com/channel/UClB4KPy5LkJj1t3SgYVtMOQ/videos>
 1. <https://www.youtube.com/c/ExponentTV/videos>
-1. https://www.youtube.com/watch?v=cQP8WApzIQQ&list=PLrw6a1wE39\_tb2fErI4-WkMbsvGQk9\_UB
 1. <https://www.youtube.com/c/TheInterviewSage/videos>
 1. <https://www.youtube.com/c/ThinkSoftware/videos>
 1. <https://www.youtube.com/c/SuccessinTech/videos>
 1. <https://www.youtube.com/c/TechDummiesNarendraL/videos>
 
-`                  `20. <https://www.youtube.com/c/OktaDev/videos>
-
+``20. <https://www.youtube.com/c/OktaDev/videos>
 
 Important Books :
 
@@ -36,8 +34,9 @@ Important Books :
 1. [Buy Distributed Algorithms – An Intuitive Approach 2e (The MIT Press) Book Online at Low Prices in India | Distributed Algorithms – An Intuitive Approach 2e (The MIT Press) Reviews & Ratings - Amazon.in](https://www.amazon.in/Distributed-Algorithms-Intuitive-Approach-Press-dp-0262037661/dp/0262037661/ref=dp_ob_title_bk)
 1. [Elasticsearch: The Definitive Guide: A Distributed Real-Time Search and Analytics Engine eBook: Gormley, Clinton, Tong, Zachary: Amazon.in: Kindle Store](https://www.amazon.in/Elasticsearch-Definitive-Distributed-Real-Time-Analytics-ebook/dp/B00SLXVBC4)
 1. [Buy Cassandra – The Definitive Guide, 3e: Distributed Data at Web Scale Book Online at Low Prices in India | Cassandra – The Definitive Guide, 3e: Distributed Data at Web Scale Reviews & Ratings - Amazon.in](https://www.amazon.in/Cassandra-Definitive-Guide-Jeff-Carpenter/dp/1098115163)
-# Imp keywords
+1. [http://book.mixu.net/distsys/single-page.html]
 
+## Imp keywords
 
 1. Write ahead logging
 1. SSL passthrough / termination on load balancers
@@ -66,12 +65,8 @@ Important Books :
 1. Saga
 1. Hyperloglog
 
+## Important algorithms
 
-
-
-
-
-# Important algorithms
 <https://github.com/resumejob/system-design-algorithms>
 
 - Frugal Streaming
@@ -96,28 +91,11 @@ Important Books :
 - Fenwick Tree - <http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=2FDD6F53D3DC3BB91FA42E7277B6765B?doi=10.1.1.14.8917&rep=rep1&type=pdf>
 - AMS (Alon Matias Szegedy) algorithm
 
-
-
-
-
-
-
-
-
-
-
-
-#
-#
-# Cloud design patterns
-
-
+## Cloud design patterns
 
 <https://docs.microsoft.com/en-us/azure/architecture/patterns/index-patterns>
 
 Cloud arch pattern
-
-
 
 |[Ambassador](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador)|Create helper services that send network requests on behalf of a consumer service or application.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
 | :- | :- | :- |
@@ -160,13 +138,6 @@ Cloud arch pattern
 |[Throttling](https://docs.microsoft.com/en-us/azure/architecture/patterns/throttling)|Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service.|<p>[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
 |[Valet Key](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key)|Use a token or key that provides clients with restricted direct access to a specific resource or service.|<p>[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),</p><p><br>[Security](https://docs.microsoft.com/en-us/azure/architecture/framework/security/security-patterns)</p>|
 
-
-
-
-
-
-
-
 Data Management patterns
 
 - 06/23/2017
@@ -187,10 +158,6 @@ Additionally data should be protected at rest, in transit, and via authorized ac
 |[Static Content Hosting](https://docs.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting)|Deploy static content to a cloud-based storage service that can deliver them directly to the client.|
 |[Valet Key](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key)|Use a token or key that provides clients with restricted direct access to a specific resource or service.|
 DATA MANAGEMENT PATTERNS
-
-
-
-
 
 Design and Implementation patterns
 
@@ -217,10 +184,6 @@ Good design encompasses factors such as consistency and coherence in component d
 |[Strangler Fig](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig)|Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.|
 DESIGN AND IMPLEMENTATION PATTERNS
 
-
-
-
-
 Messaging patterns
 
 +4
@@ -241,17 +204,10 @@ The distributed nature of cloud applications requires a messaging infrastructure
 |[Sequential Convoy](https://docs.microsoft.com/en-us/azure/architecture/patterns/sequential-convoy)|Process a set of related messages in a defined order, without blocking processing of other groups of messages.|
 MESSAGING PATTERNS
 
-
-
-
-
-
-
 Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781449357979/>
 
-
-
 # LEETCODE all system design problems
+
 1. Web Crawler']
 
 <https://leetcode.com/discuss/interview-question/system-design/124657/Facebook-or-System-Design-or-A-web-crawler-that-will-crawl-Wikipedia>
@@ -319,8 +275,8 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 <https://leetcode.com/discuss/interview-question/system-design/153941/Design-the-%22People-You-May-Know%22-feature-on-LinkedIn-or-Facebook>.
 
 18. Uber / Luxe (anti-uber)?
-18. Freight / delivery orchestration? (edited) 
-18. Botnet/decentralized web crawler/torrent 
+18. Freight / delivery orchestration? (edited)
+18. Botnet/decentralized web crawler/torrent
 
 <https://leetcode.com/discuss/interview-question/system-design/594844/System-design-question-Help-needed>
 
@@ -349,7 +305,7 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 
 <https://leetcode.com/discuss/interview-question/system-design/308452/System-Design-or-Programming-contest-platform-like-LeetCode>
 
-26. Large log data collection and processing system 
+26. Large log data collection and processing system
 
 <https://leetcode.com/discuss/interview-question/system-design/124603/Amazon-or-Phone-screen-or-How-to-handle-large-log-data>
 <https://leetcode.com/discuss/interview-question/system-design/128037/How-would-you-parse-a-huge-log-file>
@@ -461,9 +417,9 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 
 41. Ecommerce Price checker system <https://leetcode.com/discuss/interview-question/system-design/140742/E-commerce-(Amazon)Website-looking-into-other-competitor-Website-products-prices-and-update>
 41. Notification system <https://leetcode.com/discuss/interview-question/system-design/138097/Design-Notification-Service-for-Amazon-Alexa>
-41. Online ludo game 
+41. Online ludo game
 41. metric monitoring service
-41. Ecommerce site ,Shopping cart, product catalog, payment gateway 
+41. Ecommerce site ,Shopping cart, product catalog, payment gateway
 
 <https://leetcode.com/discuss/interview-question/system-design/211415/Interview-Question-Ecommerce-System-design-(-Eg-%3A-Amazon-)%3A-Concurrency-issues-handling>
 
@@ -508,13 +464,13 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 55. Ads click visualisation system <https://leetcode.com/discuss/interview-question/system-design/1002923/Facebook-or-Online-or-Real-time-data-visualization-for-ads-clicks>
 55. IoT devices management system <https://leetcode.com/discuss/interview-question/system-design/974890/Design-a-system-for-management-of-IOT-devices>
 55. Timer service <https://leetcode.com/discuss/interview-question/system-design/973207/System-Design-or-Timer-service>
-55. Service monitoring and alerting system like pagerduty, azure monitor etc 
+55. Service monitoring and alerting system like pagerduty, azure monitor etc
     <https://leetcode.com/discuss/interview-question/system-design/958919/System-Design-Interview-or-Service-Health-Monitoring-and-Alerting-Service>
 
 <https://leetcode.com/discuss/interview-question/system-design/287678/Design-a-monitoring-or-analytics-service-like-Datadog-or-SignalFx>
 
 63. Load balancer <https://leetcode.com/discuss/interview-question/system-design/943352/Facebook-or-E5-System-Design-Interview-Question-or-Menlo-Park>
-63. Design undergeound system 
+63. Design undergeound system
 63. Leader board table design <https://leetcode.com/discuss/interview-question/system-design/892083/Leaderboard-table-system-design-for-online-game>
 63. Slot booking system for playarena etc <https://leetcode.com/discuss/interview-question/system-design/880581/Event-Booking-for-playarenas-Low-level-design>
 
@@ -536,11 +492,11 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 <https://leetcode.com/discuss/interview-question/system-design/307558/Design-Stack-Overflow>
 
 73. Tinyurls <https://leetcode.com/discuss/interview-question/system-design/838012/URL-Shortener-or-MD5-or-How-to-deal-with-collisions-or-FinTech-startup>
-73. Github like cloud repo <https://leetcode.com/discuss/interview-question/system-design/837383/System-design-of-code-repository-like-github> 
+73. Github like cloud repo <https://leetcode.com/discuss/interview-question/system-design/837383/System-design-of-code-repository-like-github>
 73. Job posting site <https://leetcode.com/discuss/interview-question/system-design/811840/Job-listing-storage-and-search>
 73. S3/cloud object store <https://leetcode.com/discuss/interview-question/system-design/811503/System-design-Object-store-design-like-S3GCS>
 73. Celebrity timeline generation <https://leetcode.com/discuss/interview-question/system-design/810561/Timeline-generation-for-celebrities-or-System-Design-or-Google>
-73. Kindle service 
+73. Kindle service
 73. Bidding system <https://leetcode.com/discuss/interview-question/system-design/792060/Bidding-System%3A-System-Design-Interview>
 73. Billing system - asked in fb interview
 73. RPC system for client server comm <https://leetcode.com/discuss/interview-question/system-design/790034/Client-Server-Communication%3A-System-Design-Interview>
@@ -632,22 +588,6 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 137. Hourly backup from mobile phone <https://leetcode.com/discuss/interview-question/system-design/124792/Design-a-system-that-can-handle-hourly-backups-for-mobile-phones>
 137. Google help system <https://leetcode.com/discuss/interview-question/system-design/125191/Design-the-Google-help-system>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 **Other interesting post  about specific component design**
 
 1. <https://leetcode.com/discuss/interview-question/system-design/136140/Write-a-class-which-is-hard-to-test>
@@ -675,7 +615,7 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 1. LLD <https://leetcode.com/discuss/interview-question/system-design/692383/Google-or-Onsite-or-Design-a-organization-pharmacy-shop-with-managers>
 1. T9 predicitve system <https://leetcode.com/discuss/interview-question/system-design/685338/Microsoft-or-Onsite-or-Design-the-T9-predictive-text-algorithm-and-system>
 1. Storsge of millions of subscriber <https://leetcode.com/discuss/interview-question/system-design/680047/How-will-you-store-millions-of-subscribers-list-(assume-it-as-email-id)>
-1. Flipkart warehouse portal 
+1. Flipkart warehouse portal
 
 <https://leetcode.com/discuss/interview-question/system-design/663037/Amazon-SystemDesign-Flipkart-Suggestions-Design-Warehouse-Portal>
 
@@ -731,42 +671,20 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 58. Store extremely large parse matrix <https://leetcode.com/discuss/interview-question/system-design/125306/How-to-store-extremely-large-sparse-matrices>
 58. Implement mine swipper
 
-
-
-
-
-
-
 OOP design <https://github.com/tssovi/grokking-the-object-oriented-design-interview>
 
 <https://github.com/savitansh/SystemDesignInterview>
 
-
-
-
-
 <https://leetcode.com/discuss/interview-question/system-design/943886/Facebook-Product-Design-Questions>
-
-
 
 <https://github.com/checkcheckzz/system-design-interview>
 
 [GitHub - donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
 
-
-
-
-
-
-
-Drawing tool 
+Drawing tool
 <https://leetcode.com/discuss/interview-question/system-design/758105/Remote-system-design-diagram-drawing-tool>
 
-
-
 Other informstive posts
-
-
 
 I hope it will be helpful if you have mentioned your overall experience.
 
@@ -801,14 +719,6 @@ Misc -- Logging/Notification
 
 Once you have overall picture in your mind, you can start with YouTube videos like Gaurav Sen or Tech Dummies.
 
-
-
-
-
-
-
-
-
 **Product Design**
 
 The product design interview at Facebook will involve designing a product or API to support an end-user experience. Here's a list of concepts that Facebook recommends you review before your interview:
@@ -831,10 +741,6 @@ The product design interview at Facebook will involve designing a product or API
 
 Some example questions involve designing a product API or an email server.
 
-
-
-
-
 **System Design**
 
 The system design interview at Facebook will ask you to weigh design considerations for complex problems. Here's a list of concepts that Facebook recommends you review before your interview:
@@ -856,6 +762,3 @@ Real-world performance (relative performance RAM, disk, your network, SSD)
 -QPS capacity/machine estimation (back of the envelope estimates), byte size estimation
 
 Some example questions involve architecting a video distribution system or designing a mobile image search client.
-
-
-
