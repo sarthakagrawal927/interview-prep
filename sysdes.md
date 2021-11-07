@@ -97,46 +97,46 @@ Important Books :
 
 Cloud arch pattern
 
-|[Ambassador](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador)|Create helper services that send network requests on behalf of a consumer service or application.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
+|[Ambassador](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador)|Create helper services that send network requests on behalf of a consumer service or application.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
 | :- | :- | :- |
-|[Anti-Corruption Layer](https://docs.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer)|Implement a façade or adapter layer between a modern application and a legacy system.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
+|[Anti-Corruption Layer](https://docs.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer)|Implement a façade or adapter layer between a modern application and a legacy system.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
 |[Asynchronous Request-Reply](https://docs.microsoft.com/en-us/azure/architecture/patterns/async-request-reply)|Decouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response.|[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging)|
 |[Backends for Frontends](https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends)|Create separate backend services to be consumed by specific frontend applications or interfaces.|[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation)|
 |[Bulkhead](https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead)|Isolate elements of an application into pools so that if one fails, the others will continue to function.|[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)|
-|[Cache-Aside](https://docs.microsoft.com/en-us/azure/architecture/patterns/cache-aside)|Load data on demand into a cache from a data store|<p>[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
-|[Choreography](https://docs.microsoft.com/en-us/azure/architecture/patterns/choreography)|Let each service decide when and how a business operation is processed, instead of depending on a central orchestrator.|<p>[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
+|[Cache-Aside](https://docs.microsoft.com/en-us/azure/architecture/patterns/cache-aside)|Load data on demand into a cache from a data store[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
+|[Choreography](https://docs.microsoft.com/en-us/azure/architecture/patterns/choreography)|Let each service decide when and how a business operation is processed, instead of depending on a central orchestrator.[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
 |[Circuit Breaker](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)|Handle faults that might take a variable amount of time to fix when connecting to a remote service or resource.|[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)|
 |[Claim Check](https://docs.microsoft.com/en-us/azure/architecture/patterns/claim-check)|Split a large message into a claim check and a payload to avoid overwhelming a message bus.|[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging)|
 |[Compensating Transaction](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction)|Undo the work performed by a series of steps, which together define an eventually consistent operation.|[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)|
 |[Competing Consumers](https://docs.microsoft.com/en-us/azure/architecture/patterns/competing-consumers)|Enable multiple concurrent consumers to process messages received on the same messaging channel.|[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging)|
 |[Compute Resource Consolidation](https://docs.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation)|Consolidate multiple tasks or operations into a single computational unit|[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation)|
-|[CQRS](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)|Segregate operations that read data from operations that update data by using separate interfaces.|<p>[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),</p><p><br>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
-|[Deployment Stamps](https://docs.microsoft.com/en-us/azure/architecture/patterns/deployment-stamp)|Deploy multiple independent copies of application components, including data stores.|<p>[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
-|[Event Sourcing](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)|Use an append-only store to record the full series of events that describe actions taken on data in a domain.|<p>[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
-|[External Configuration Store](https://docs.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store)|Move configuration information out of the application deployment package to a centralized location.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
+|[CQRS](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)|Segregate operations that read data from operations that update data by using separate interfaces.[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
+|[Deployment Stamps](https://docs.microsoft.com/en-us/azure/architecture/patterns/deployment-stamp)|Deploy multiple independent copies of application components, including data stores.[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
+|[Event Sourcing](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)|Use an append-only store to record the full series of events that describe actions taken on data in a domain.[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
+|[External Configuration Store](https://docs.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store)|Move configuration information out of the application deployment package to a centralized location.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
 |[Federated Identity](https://docs.microsoft.com/en-us/azure/architecture/patterns/federated-identity)|Delegate authentication to an external identity provider.|[Security](https://docs.microsoft.com/en-us/azure/architecture/framework/security/security-patterns)|
 |[Gatekeeper](https://docs.microsoft.com/en-us/azure/architecture/patterns/gatekeeper)|Protect applications and services by using a dedicated host instance that acts as a broker between clients and the application or service, validates and sanitizes requests, and passes requests and data between them.|[Security](https://docs.microsoft.com/en-us/azure/architecture/framework/security/security-patterns)|
-|[Gateway Aggregation](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation)|Use a gateway to aggregate multiple individual requests into a single request.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
-|[Gateway Offloading](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading)|Offload shared or specialized service functionality to a gateway proxy.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
-|[Gateway Routing](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing)|Route requests to multiple services using a single endpoint.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
-|[Geodes](https://docs.microsoft.com/en-us/azure/architecture/patterns/geodes)|Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.|<p>[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
-|[Health Endpoint Monitoring](https://docs.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring)|Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.|<p>[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
-|[Index Table](https://docs.microsoft.com/en-us/azure/architecture/patterns/index-table)|Create indexes over the fields in data stores that are frequently referenced by queries.|<p>[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
-|[Leader Election](https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election)|Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)</p>|
-|[Materialized View](https://docs.microsoft.com/en-us/azure/architecture/patterns/materialized-view)|Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.|<p>[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
-|[Pipes and Filters](https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters)|Break down a task that performs complex processing into a series of separate elements that can be reused.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging)</p>|
-|[Priority Queue](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue)|Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.|<p>[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
+|[Gateway Aggregation](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation)|Use a gateway to aggregate multiple individual requests into a single request.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
+|[Gateway Offloading](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading)|Offload shared or specialized service functionality to a gateway proxy.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
+|[Gateway Routing](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing)|Route requests to multiple services using a single endpoint.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
+|[Geodes](https://docs.microsoft.com/en-us/azure/architecture/patterns/geodes)|Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
+|[Health Endpoint Monitoring](https://docs.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring)|Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
+|[Index Table](https://docs.microsoft.com/en-us/azure/architecture/patterns/index-table)|Create indexes over the fields in data stores that are frequently referenced by queries.[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
+|[Leader Election](https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election)|Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)|
+|[Materialized View](https://docs.microsoft.com/en-us/azure/architecture/patterns/materialized-view)|Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
+|[Pipes and Filters](https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters)|Break down a task that performs complex processing into a series of separate elements that can be reused.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging)|
+|[Priority Queue](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue)|Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
 |[Publisher/Subscriber](https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber)|Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers.|[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging)|
-|[Queue-Based Load Leveling](https://docs.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling)|Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.|<p>[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),</p><p><br>[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging),</p><p><br>[Resiliency](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
+|[Queue-Based Load Leveling](https://docs.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling)|Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging),[Resiliency](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
 |[Retry](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry)|Enable an application to handle anticipated, temporary failures when it tries to connect to a service or network resource by transparently retrying an operation that's previously failed.|[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)|
-|[Scheduler Agent Supervisor](https://docs.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor)|Coordinate a set of actions across a distributed set of services and other remote resources.|<p>[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging),</p><p><br>[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)</p>|
+|[Scheduler Agent Supervisor](https://docs.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor)|Coordinate a set of actions across a distributed set of services and other remote resources.[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging),[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)|
 |[Sequential Convoy](https://docs.microsoft.com/en-us/azure/architecture/patterns/sequential-convoy)|Process a set of related messages in a defined order, without blocking processing of other groups of messages.|[Messaging](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging)|
-|[Sharding](https://docs.microsoft.com/en-us/azure/architecture/patterns/sharding)|Divide a data store into a set of horizontal partitions or shards.|<p>[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
-|[Sidecar](https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar)|Deploy components of an application into a separate process or container to provide isolation and encapsulation.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
-|[Static Content Hosting](https://docs.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting)|Deploy static content to a cloud-based storage service that can deliver them directly to the client.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
-|[Strangler Fig](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig)|Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.|<p>[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),</p><p><br>[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)</p>|
-|[Throttling](https://docs.microsoft.com/en-us/azure/architecture/patterns/throttling)|Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service.|<p>[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),</p><p><br>[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)</p>|
-|[Valet Key](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key)|Use a token or key that provides clients with restricted direct access to a specific resource or service.|<p>[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),</p><p><br>[Security](https://docs.microsoft.com/en-us/azure/architecture/framework/security/security-patterns)</p>|
+|[Sharding](https://docs.microsoft.com/en-us/azure/architecture/patterns/sharding)|Divide a data store into a set of horizontal partitions or shards.[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
+|[Sidecar](https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar)|Deploy components of an application into a separate process or container to provide isolation and encapsulation.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
+|[Static Content Hosting](https://docs.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting)|Deploy static content to a cloud-based storage service that can deliver them directly to the client.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
+|[Strangler Fig](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig)|Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.[Design and Implementation](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation),[Operational Excellence](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/devops-patterns)|
+|[Throttling](https://docs.microsoft.com/en-us/azure/architecture/patterns/throttling)|Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service.[Reliability](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns),[Performance Efficiency](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/performance-efficiency-patterns)|
+|[Valet Key](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key)|Use a token or key that provides clients with restricted direct access to a specific resource or service.[Data Management](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management),[Security](https://docs.microsoft.com/en-us/azure/architecture/framework/security/security-patterns)|
 
 Data Management patterns
 
@@ -169,9 +169,9 @@ Good design encompasses factors such as consistency and coherence in component d
 |**Pattern**|**Summary**|
 | :- | :- |
 |[Ambassador](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador)|Create helper services that send network requests on behalf of a consumer service or application.|
-|[Anti-Corruption Layer](https://docs.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer)|Implement a façade or adapter layer between a modern application and a legacy system.|
+|[Anti-Corruption Layer](https://docs.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer)|Implement a facade or adapter layer between a modern application and a legacy system.|
 |[Backends for Frontends](https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends)|Create separate backend services to be consumed by specific frontend applications or interfaces.|
-|[CQRS](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)|Segregate operations that read data from operations that update data by using separate interfaces.|
+|[CORS](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)|Segregate operations that read data from operations that update data by using separate interfaces.|
 |[Compute Resource Consolidation](https://docs.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation)|Consolidate multiple tasks or operations into a single computational unit|
 |[External Configuration Store](https://docs.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store)|Move configuration information out of the application deployment package to a centralized location.|
 |[Gateway Aggregation](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation)|Use a gateway to aggregate multiple individual requests into a single request.|
@@ -206,20 +206,20 @@ MESSAGING PATTERNS
 
 Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781449357979/>
 
-# LEETCODE all system design problems
+## LEETCODE all system design problems
 
-1. Web Crawler']
+Web Crawler']
 
 <https://leetcode.com/discuss/interview-question/system-design/124657/Facebook-or-System-Design-or-A-web-crawler-that-will-crawl-Wikipedia>
 
-2. Detect web crawler <https://leetcode.com/discuss/interview-question/system-design/548816/Amazon-or-System-Design-or-Web-Crawler-Detector>
-2. Yelp
-2. Distributed file system
-2. URL shortening and Pastebin <https://leetcode.com/discuss/interview-question/system-design/124804/Design-Pastebin>
+Detect web crawler <https://leetcode.com/discuss/interview-question/system-design/548816/Amazon-or-System-Design-or-Web-Crawler-Detector>
+Yelp
+Distributed file system
+URL shortening and Pastebin <https://leetcode.com/discuss/interview-question/system-design/124804/Design-Pastebin>
 
 <https://leetcode.com/discuss/interview-question/system-design/124658/Design-URL-Shortening-service-like-TinyURL>
 
-6. Instagram
+Instagram
 
 <https://leetcode.com/discuss/interview-question/system-design/124802/Design-Instagram>
 
@@ -227,13 +227,13 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 
 <https://leetcode.com/discuss/interview-question/system-design/719253/Design-Facebook-%3A-System-Design-Interview>
 
-7. Dropbox.
-7. Twitter
+Dropbox.
+Twitter
 
 <https://leetcode.com/discuss/interview-question/system-design/124689/Design-twitter>
 
-9. Redis <https://leetcode.com/discuss/interview-question/system-design/125751/Design-a-distributed-cache-system>
-9. Youtube or Netflix <https://leetcode.com/discuss/interview-question/system-design/733520/Design-YouTube-Very-detailed-design-with-diagrams>
+Redis <https://leetcode.com/discuss/interview-question/system-design/125751/Design-a-distributed-cache-system>
+Youtube or Netflix <https://leetcode.com/discuss/interview-question/system-design/733520/Design-YouTube-Very-detailed-design-with-diagrams>
 
 <https://leetcode.com/discuss/interview-question/system-design/144287/Design-Recommendation-System-for-Amazon-Videos>
 
@@ -249,21 +249,21 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 
 <https://leetcode.com/discuss/interview-question/system-design/150607/Design-youtube>
 
-11. Ticketmaster
+Ticketmaster
 
 <https://leetcode.com/discuss/interview-question/system-design/124803/Design-BookMyShow>
 
 <https://leetcode.com/discuss/interview-question/system-design/315763/System-Design-or-Seat-reservation-application-like-Ticket-Master-or-BookMyShow>
 
-12. Facebook Messenger or WhatsApp <https://leetcode.com/discuss/interview-question/system-design/585930/Amazon-or-System-Design-or-Design-a-Chat-Service>
+1.  Facebook Messenger or WhatsApp <https://leetcode.com/discuss/interview-question/system-design/585930/Amazon-or-System-Design-or-Design-a-Chat-Service>
 
 <https://leetcode.com/discuss/interview-question/system-design/220073/How-would-you-design-WhatsApp>
 
 <https://leetcode.com/discuss/interview-question/system-design/124613/Amazon-or-System-Design-or-A-scalable-chat-application-on-phone-browsing>
 
 13. Typeahead suggesions.
-13. Twitter search.
-13. Newsfeed ranking
+14. Twitter search.
+15. Newsfeed ranking
 
 <https://leetcode.com/discuss/interview-question/system-design/349627/How-do-you-design-a-meta-data-for-a-news-feed>
 
@@ -590,32 +590,32 @@ Book <https://learning.oreilly.com/library/view/cloud-architecture-patterns/9781
 
 **Other interesting post  about specific component design**
 
-1. <https://leetcode.com/discuss/interview-question/system-design/136140/Write-a-class-which-is-hard-to-test>
-1. Interesting variation of ecart problem where first one who click buys will buy <https://leetcode.com/discuss/interview-question/system-design/498895/Startup-interview-or-Designing-tricky-e-shop>
-1. Back of envelope calculation <https://leetcode.com/discuss/interview-question/system-design/357656/Experience-with-back-of-the-envelope-calculations>
-1. Drawing tool <https://leetcode.com/discuss/interview-question/system-design/1148896/System-Design-Drawing-Tool-Recos>
-1. Very good list <https://leetcode.com/discuss/general-discussion/670355/Experienced-Interview-Preparation-Guide-All-Resources>
-1. <https://leetcode.com/discuss/interview-question/1002218/Facebook-or-Google-or-Top-System-Design-Interview-Questions-(Part-1)>
-1. <https://github.com/donnemartin/system-design-primer>
-1. <https://github.com/binhnguyennus/awesome-scalability>
-1. Json parser <https://leetcode.com/discuss/interview-question/system-design/1052608/Design-a-JSON-Parser-or-SDE2>
-1. <https://leetcode.com/discuss/interview-question/system-design/1043657/MakeMyTrip-Backend-Developer-or-System-DesignMultithreading>
-1. <https://leetcode.com/discuss/interview-question/system-design/1042229/Facebook-or-Google-or-Top-System-Design-Interview-Questions-(Part-2)>
-1. <https://leetcode.com/discuss/interview-question/system-design/1038585/How-do-you-scale-up-an-Application-to-serve-thousands-of-request-per-second>
-1. User data access policy design <https://leetcode.com/discuss/interview-question/system-design/895268/Google-or-System-Design>
-1. <https://leetcode.com/discuss/interview-question/system-design/829466/Amazon-or-Phone-or-Seattle-or-Column-Store-vs-Row-Store>
-1. <https://leetcode.com/discuss/interview-question/system-design/808216/Phone-book-and-search> - suffix tree
-1. <https://hackernoon.com/scaling-websockets-9a31497af051>
-1. Online whiteboard drawing like draw.io
-1. <https://leetcode.com/discuss/interview-question/system-design/799474/Virtual-onsite-at-DocuSign>
-1. <https://leetcode.com/discuss/interview-question/system-design/795890/How-many-transactions-does-Oracle-DB-handle-Read-and-write>
-1. How to store Recently viewed item <https://leetcode.com/discuss/interview-question/system-design/775139/Amazon-System-Design-customer's-recently-viewed-items>
-1. Depth an interviewer can go <https://leetcode.com/discuss/interview-question/system-design/773980/Watch-this-before-System-Design-Interview-the-details-an-interviewer-can-go-to-evaluate-candidate>
-1. Privacy api <https://leetcode.com/discuss/interview-question/system-design/727474/System-design-critique-request-for-below-question>
-1. LLD <https://leetcode.com/discuss/interview-question/system-design/692383/Google-or-Onsite-or-Design-a-organization-pharmacy-shop-with-managers>
-1. T9 predicitve system <https://leetcode.com/discuss/interview-question/system-design/685338/Microsoft-or-Onsite-or-Design-the-T9-predictive-text-algorithm-and-system>
-1. Storsge of millions of subscriber <https://leetcode.com/discuss/interview-question/system-design/680047/How-will-you-store-millions-of-subscribers-list-(assume-it-as-email-id)>
-1. Flipkart warehouse portal
+<https://leetcode.com/discuss/interview-question/system-design/136140/Write-a-class-which-is-hard-to-test>
+Interesting variation of ecart problem where first one who click buys will buy <https://leetcode.com/discuss/interview-question/system-design/498895/Startup-interview-or-Designing-tricky-e-shop>
+Back of envelope calculation <https://leetcode.com/discuss/interview-question/system-design/357656/Experience-with-back-of-the-envelope-calculations>
+Drawing tool <https://leetcode.com/discuss/interview-question/system-design/1148896/System-Design-Drawing-Tool-Recos>
+Very good list <https://leetcode.com/discuss/general-discussion/670355/Experienced-Interview-Preparation-Guide-All-Resources>
+<https://leetcode.com/discuss/interview-question/1002218/Facebook-or-Google-or-Top-System-Design-Interview-Questions-(Part-1)>
+<https://github.com/donnemartin/system-design-primer>
+<https://github.com/binhnguyennus/awesome-scalability>
+Json parser <https://leetcode.com/discuss/interview-question/system-design/1052608/Design-a-JSON-Parser-or-SDE2>
+<https://leetcode.com/discuss/interview-question/system-design/1043657/MakeMyTrip-Backend-Developer-or-System-DesignMultithreading>
+<https://leetcode.com/discuss/interview-question/system-design/1042229/Facebook-or-Google-or-Top-System-Design-Interview-Questions-(Part-2)>
+<https://leetcode.com/discuss/interview-question/system-design/1038585/How-do-you-scale-up-an-Application-to-serve-thousands-of-request-per-second>
+User data access policy design <https://leetcode.com/discuss/interview-question/system-design/895268/Google-or-System-Design>
+<https://leetcode.com/discuss/interview-question/system-design/829466/Amazon-or-Phone-or-Seattle-or-Column-Store-vs-Row-Store>
+<https://leetcode.com/discuss/interview-question/system-design/808216/Phone-book-and-search> - suffix tree
+<https://hackernoon.com/scaling-websockets-9a31497af051>
+Online whiteboard drawing like draw.io
+<https://leetcode.com/discuss/interview-question/system-design/799474/Virtual-onsite-at-DocuSign>
+<https://leetcode.com/discuss/interview-question/system-design/795890/How-many-transactions-does-Oracle-DB-handle-Read-and-write>
+How to store Recently viewed item <https://leetcode.com/discuss/interview-question/system-design/775139/Amazon-System-Design-customer's-recently-viewed-items>
+Depth an interviewer can go <https://leetcode.com/discuss/interview-question/system-design/773980/Watch-this-before-System-Design-Interview-the-details-an-interviewer-can-go-to-evaluate-candidate>
+Privacy api <https://leetcode.com/discuss/interview-question/system-design/727474/System-design-critique-request-for-below-question>
+LLD <https://leetcode.com/discuss/interview-question/system-design/692383/Google-or-Onsite-or-Design-a-organization-pharmacy-shop-with-managers>
+T9 predicitve system <https://leetcode.com/discuss/interview-question/system-design/685338/Microsoft-or-Onsite-or-Design-the-T9-predictive-text-algorithm-and-system>
+Storsge of millions of subscriber <https://leetcode.com/discuss/interview-question/system-design/680047/How-will-you-store-millions-of-subscribers-list-(assume-it-as-email-id)>
+Flipkart warehouse portal
 
 <https://leetcode.com/discuss/interview-question/system-design/663037/Amazon-SystemDesign-Flipkart-Suggestions-Design-Warehouse-Portal>
 
@@ -719,7 +719,7 @@ Misc -- Logging/Notification
 
 Once you have overall picture in your mind, you can start with YouTube videos like Gaurav Sen or Tech Dummies.
 
-**Product Design**
+## Product Design
 
 The product design interview at Facebook will involve designing a product or API to support an end-user experience. Here's a list of concepts that Facebook recommends you review before your interview:
 
@@ -741,7 +741,7 @@ The product design interview at Facebook will involve designing a product or API
 
 Some example questions involve designing a product API or an email server.
 
-**System Design**
+## System Design
 
 The system design interview at Facebook will ask you to weigh design considerations for complex problems. Here's a list of concepts that Facebook recommends you review before your interview:
 
