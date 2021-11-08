@@ -10,3 +10,6 @@
 [submodule "CompleteGuide"]
 	path = CompleteGuide
 	url = https://github.com/Olshansk/interview
+[submodule "OOPSystemDesign"]
+	path = OOPSystemDesign
+	url = https://github.com/tssovi/grokking-the-object-oriented-design-interview
