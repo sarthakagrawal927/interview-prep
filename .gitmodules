@@ -13,3 +13,6 @@
 [submodule "OOPSystemDesign"]
 	path = OOPSystemDesign
 	url = https://github.com/tssovi/grokking-the-object-oriented-design-interview
+[submodule "companies-to-apply"]
+	path = companies-to-apply
+	url = https://github.com/Kaustubh-Natuskar/companies-to-apply.git
